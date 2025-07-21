@@ -110,7 +110,7 @@ table LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318
 
 	partition LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Jejum'[Data Início])), 1, 1), Date(Year(MAX('Jejum'[Data Início])), 12, 31))
+		source = Calendar(Date(Year(MIN('FAT_Jejum'[Data Início])), 1, 1), Date(Year(MAX('FAT_Jejum'[Data Início])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

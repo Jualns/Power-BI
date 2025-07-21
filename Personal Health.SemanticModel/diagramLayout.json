@@ -10,23 +10,23 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 0
+            "x": 608,
+            "y": 14
           },
-          "nodeIndex": "dCalendar",
-          "nodeLineageTag": "70df2dab-e9fe-42d0-afa5-b57cb738d421",
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "6c4d101b-ada0-4f22-babe-c081fcb8086e",
           "size": {
-            "height": 272,
-            "width": 234
+            "height": 179,
+            "width": 262
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 284,
-            "y": 24
+            "x": 31,
+            "y": 533
           },
-          "nodeIndex": "Jejum",
+          "nodeIndex": "FAT_Jejum",
           "nodeLineageTag": "548a2957-8522-4c96-91b7-c7ec5d3fb647",
           "size": {
             "height": 224,
@@ -36,14 +36,40 @@
         },
         {
           "location": {
-            "x": 568,
-            "y": 36
+            "x": 515,
+            "y": 550
           },
-          "nodeIndex": "Peso",
+          "nodeIndex": "FAT_Peso",
           "nodeLineageTag": "739d3e59-58aa-4fba-9b32-d2f86a173456",
           "size": {
             "height": 200,
             "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 233,
+            "y": 35
+          },
+          "nodeIndex": "_dCalendario",
+          "nodeLineageTag": "70df2dab-e9fe-42d0-afa5-b57cb738d421",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 950,
+            "y": 31
+          },
+          "nodeIndex": "_BoxPlot",
+          "nodeLineageTag": "8c76a51c-799f-4cbe-a02d-32b5b0a732d8",
+          "size": {
+            "height": 145,
+            "width": 145
           },
           "zIndex": 0
         }

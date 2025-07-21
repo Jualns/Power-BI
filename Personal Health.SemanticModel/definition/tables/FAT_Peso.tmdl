@@ -1,4 +1,4 @@
-table Peso
+table FAT_Peso
 	lineageTag: 739d3e59-58aa-4fba-9b32-d2f86a173456
 
 	column Data
@@ -7,11 +7,6 @@ table Peso
 		lineageTag: 04a6c072-7690-4b2e-8956-50aad7381577
 		summarizeBy: none
 		sourceColumn: Data
-
-		variation Variation
-			isDefault
-			relationship: 060010e3-8a0c-4ad8-a660-ffa16599fd56
-			defaultHierarchy: LocalDateTable_6990e46b-eda7-420e-ac63-c6f23c2f4ce0.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -48,7 +43,7 @@ table Peso
 
 	column DataHora
 		dataType: dateTime
-		formatString: General Date
+		formatString: dd/mm/yy hh:nn
 		lineageTag: b280c9ca-407e-4de3-9f6f-9c08d86af493
 		summarizeBy: none
 		sourceColumn: DataHora
@@ -60,11 +55,27 @@ table Peso
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Peso = m
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Período do Dia' =
+			
+			SWITCH(
+			    TRUE(),
+			    FAT_Peso[Horário] <= TIME(12,0,0), "Manhã",
+			    FAT_Peso[Horário] <= TIME(18,0,0), "Tarde",
+			    "Noite"
+			)
+		lineageTag: 178da8c1-fb63-4bfb-bc1b-bba22b6724b1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FAT_Peso = m
 		mode: import
+		queryGroup: FATs
 		source =
 				let
-				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1QYfcAynBMLwTYWDzlkKWjnXnLSa8I8tw4_gEbWsRWWo/edit?gid=0#gid=0"),
+				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1QYfcAynBMLwTYWDzlkKWjnXnLSa8I8tw4_gEbWsRWWo/edit?usp=sharing"),
 				    Peso_Table = Fonte{[name="Peso",ItemKind="Table"]}[Data],
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Peso_Table, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data", type date}, {"Peso", type number}, {"Horário", type time}, {"Treino", type text}}),

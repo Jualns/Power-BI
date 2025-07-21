@@ -1,0 +1,30 @@
+table _Medidas
+	lineageTag: 6c4d101b-ada0-4f22-babe-c081fcb8086e
+
+	measure 'Horas Médias em Jejum' = AVERAGE(FAT_Jejum[Período (h)])
+		lineageTag: 04ff43f4-18e0-46e4-81d7-f8fd1f68cc30
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ultimo_Registro = "Último Registro: " & FORMAT(MAX(FAT_Peso[DataHora]), "dd/mm/yyyy hh:nn")
+		lineageTag: c339ebce-6c30-4162-b64f-d6c188039762
+
+	measure 'Qtde de Treinos' = DISTINCTCOUNT(FAT_Peso[Data])
+		formatString: 0
+		lineageTag: dad6e766-392b-489b-b7a5-fa3324abb18e
+
+	partition _Medidas = m
+		mode: import
+		queryGroup: Auxiliares
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

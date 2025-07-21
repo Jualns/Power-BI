@@ -1,0 +1,65 @@
+table _BoxPlot
+	lineageTag: 8c76a51c-799f-4cbe-a02d-32b5b0a732d8
+
+	measure 'Peso AVG' = AVERAGE(FAT_Peso[Peso])
+		lineageTag: a2d3d887-de3a-4684-90a4-5a3dd142683c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso MIN' = MIN(FAT_Peso[Peso])
+		lineageTag: d0af6006-81cd-44bb-9dc9-d5c27b4d7c64
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso MAX' = MAX(FAT_Peso[Peso])
+		lineageTag: 8aea170a-c0da-4cf3-a982-2d0e18c21ad6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso P25' = PERCENTILE.INC(FAT_Peso[Peso], 0.25)
+		lineageTag: c4d387e0-2bda-40d0-a261-a9b49e199b2e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso P75' = PERCENTILE.INC(FAT_Peso[Peso], 0.75)
+		lineageTag: 1b020d9b-59df-4abf-be47-7b92925d657a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso MED' = MEDIAN(FAT_Peso[Peso])
+		lineageTag: eaa78805-a57e-4c9f-b989-4ba9dadcaa8d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso IQR 50-75' = [Peso P75] - [Peso MED]
+		lineageTag: 473a2f4a-1451-428e-a8eb-b802dcf8cb3a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peso IQR 25-50' = [Peso MED] - [Peso P25]
+		lineageTag: 737593ca-90c3-43d9-b4fd-24269a431cb9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PESO IQR' = [Peso P75] - [Peso P25]
+		lineageTag: 32236a14-a85d-4190-a509-a11c2ffad75e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure y_plot_MAX = [Peso MAX] * 1.1
+		lineageTag: 4d8ae439-4fb5-4344-8431-d2557ca344c5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition _BoxPlot = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
