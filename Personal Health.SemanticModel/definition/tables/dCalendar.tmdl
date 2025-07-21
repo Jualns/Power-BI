@@ -1,0 +1,111 @@
+table dCalendar
+	lineageTag: 70df2dab-e9fe-42d0-afa5-b57cb738d421
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: dccdef78-ddfa-47f3-92b9-242d08bc7608
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: b092e158-08f2-4d94-8e48-432d94be0b3b
+			defaultHierarchy: LocalDateTable_5eceef33-4603-4519-ba83-d92854e211b2.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 10e5be46-dd60-4261-b78e-72d953fcdfef
+		summarizeBy: sum
+		sourceColumn: Ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês
+		dataType: int64
+		formatString: 0
+		lineageTag: ed237b39-7652-4d1e-ab64-49b230e38f69
+		summarizeBy: sum
+		sourceColumn: Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Mês'
+		dataType: string
+		lineageTag: 1856dee3-1b32-4ad4-b73d-1365d4da907a
+		summarizeBy: none
+		sourceColumn: Nome do Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 2be2eb9b-64d8-459d-9996-8ed8e2b16a26
+		summarizeBy: sum
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		dataType: int64
+		formatString: 0
+		lineageTag: df8233b7-255b-41e1-b81f-889cc29deda9
+		summarizeBy: sum
+		sourceColumn: Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia da Semana'
+		dataType: int64
+		formatString: 0
+		lineageTag: 69d33687-75b5-4669-8ed4-c4f1bfb16ead
+		summarizeBy: sum
+		sourceColumn: Dia da Semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Dia da Semana'
+		dataType: string
+		lineageTag: 4e84466a-4366-4125-8f6b-241201a8427a
+		summarizeBy: none
+		sourceColumn: Nome do Dia da Semana
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendar = m
+		mode: import
+		source =
+				let
+				    Fonte = Peso[Data],
+				    DatasValidas = List.RemoveNulls(Fonte),
+				    DataMin = List.Min(DatasValidas),
+				    DataMaxOriginal = List.Max(DatasValidas),
+				
+				    // Ajusta DataMax para ser o último dia do ano da DataMaxOriginal
+				    DataMax = #date(Date.Year(DataMaxOriginal), 12, 31),
+				
+				    ListaDatas = List.Dates(DataMin, Duration.Days(DataMax - DataMin) + 1, #duration(1, 0, 0, 0)),
+				
+				    TabelaDatas = Table.FromList(ListaDatas, Splitter.SplitByNothing(), {"Data"}),
+				
+				    TipoData = Table.TransformColumnTypes(TabelaDatas, {{"Data", type date}}),
+				    AddAno = Table.AddColumn(TipoData, "Ano", each Date.Year([Data]), Int64.Type),
+				    AddMes = Table.AddColumn(AddAno, "Mês", each Date.Month([Data]), Int64.Type),
+				    AddNomeMes = Table.AddColumn(AddMes, "Nome do Mês", each Date.ToText([Data], "MMMM"), type text),
+				    AddTrimestre = Table.AddColumn(AddNomeMes, "Trimestre", each Date.QuarterOfYear([Data]), Int64.Type),
+				    AddDia = Table.AddColumn(AddTrimestre, "Dia", each Date.Day([Data]), Int64.Type),
+				    AddDiaSemana = Table.AddColumn(AddDia, "Dia da Semana", each Date.DayOfWeek([Data]) + 1, Int64.Type),
+				    AddNomeDiaSemana = Table.AddColumn(AddDiaSemana, "Nome do Dia da Semana", each Date.ToText([Data], "dddd"), type text)
+				in
+				    AddNomeDiaSemana
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

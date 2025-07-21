@@ -1,0 +1,30 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Jejum","Peso","dCalendar"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.145.1105.0 (25.07)+decbc46fce458c5b8d5109d6f32a743f2ac949c8
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Jejum
+ref table DateTableTemplate_280a0df5-23f4-428b-9f3a-0dea84bc645d
+ref table LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318
+ref table LocalDateTable_dc0389f5-3054-4f5c-b0b9-e77fd63f72d5
+ref table LocalDateTable_1befbc04-7ef6-4dd7-a908-e51b7fd51d18
+ref table LocalDateTable_7f2af1cf-83d1-4a43-a604-b5144666595b
+ref table Peso
+ref table LocalDateTable_6990e46b-eda7-420e-ac63-c6f23c2f4ce0
+ref table LocalDateTable_af909f62-53b7-4b6a-a12a-b2fc9b1cba77
+ref table dCalendar
+ref table LocalDateTable_5eceef33-4603-4519-ba83-d92854e211b2
+
+ref cultureInfo pt-BR
+

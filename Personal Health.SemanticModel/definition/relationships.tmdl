@@ -1,0 +1,35 @@
+relationship 7f32a451-d359-40be-b5be-36365c830ab5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Jejum.'Data Início'
+	toColumn: LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318.Date
+
+relationship 55e2336a-6993-444d-b658-7c35afbef217
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Jejum.'Data Hora Início'
+	toColumn: LocalDateTable_dc0389f5-3054-4f5c-b0b9-e77fd63f72d5.Date
+
+relationship bec82356-9c0e-4cfb-83f2-ed0d83bba071
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Jejum.'Data Hora Fim'
+	toColumn: LocalDateTable_1befbc04-7ef6-4dd7-a908-e51b7fd51d18.Date
+
+relationship 917b2084-1332-4894-bbbe-d2b40bdc8e46
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Jejum.Datas
+	toColumn: LocalDateTable_7f2af1cf-83d1-4a43-a604-b5144666595b.Date
+
+relationship 060010e3-8a0c-4ad8-a660-ffa16599fd56
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Peso.Data
+	toColumn: LocalDateTable_6990e46b-eda7-420e-ac63-c6f23c2f4ce0.Date
+
+relationship 7dbfd289-3ba1-4f5f-a44b-a0598db91a5f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Peso.DataHora
+	toColumn: LocalDateTable_af909f62-53b7-4b6a-a12a-b2fc9b1cba77.Date
+
+relationship b092e158-08f2-4d94-8e48-432d94be0b3b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendar.Data
+	toColumn: LocalDateTable_5eceef33-4603-4519-ba83-d92854e211b2.Date
+

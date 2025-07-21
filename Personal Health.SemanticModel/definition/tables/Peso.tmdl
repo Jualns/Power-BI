@@ -1,0 +1,79 @@
+table Peso
+	lineageTag: 739d3e59-58aa-4fba-9b32-d2f86a173456
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 04a6c072-7690-4b2e-8956-50aad7381577
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 060010e3-8a0c-4ad8-a660-ffa16599fd56
+			defaultHierarchy: LocalDateTable_6990e46b-eda7-420e-ac63-c6f23c2f4ce0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Peso
+		dataType: double
+		lineageTag: 8d209d2d-8987-4228-8918-92b0e10499b6
+		summarizeBy: sum
+		sourceColumn: Peso
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Horário
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: fc4d6bb7-e3e9-447d-b9b5-2722fc122a69
+		summarizeBy: none
+		sourceColumn: Horário
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Treino
+		dataType: string
+		lineageTag: 37a160c3-79d4-4e5d-b79e-c5c7a88a75f3
+		summarizeBy: none
+		sourceColumn: Treino
+
+		annotation SummarizationSetBy = Automatic
+
+	column DataHora
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b280c9ca-407e-4de3-9f6f-9c08d86af493
+		summarizeBy: none
+		sourceColumn: DataHora
+
+		variation Variation
+			isDefault
+			relationship: 7dbfd289-3ba1-4f5f-a44b-a0598db91a5f
+			defaultHierarchy: LocalDateTable_af909f62-53b7-4b6a-a12a-b2fc9b1cba77.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Peso = m
+		mode: import
+		source =
+				let
+				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1QYfcAynBMLwTYWDzlkKWjnXnLSa8I8tw4_gEbWsRWWo/edit?gid=0#gid=0"),
+				    Peso_Table = Fonte{[name="Peso",ItemKind="Table"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Peso_Table, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data", type date}, {"Peso", type number}, {"Horário", type time}, {"Treino", type text}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [Data] <> null and [Data] <> ""),
+				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Linhas Filtradas", "DataHora", each [Data] & [Horário], type datetime)
+				in
+				    #"Data e Hora Mescladas Inseridas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
