@@ -46,10 +46,26 @@ table _BoxPlot
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure y_plot_MAX = [Peso MAX] * 1.1
+	measure y_plot_MAX = [Peso MAX] * (1+[Borda_Grafico])
 		lineageTag: 4d8ae439-4fb5-4344-8431-d2557ca344c5
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure y_plot_MIN = [Peso MIN] * (1-[Borda_Grafico])
+		lineageTag: 7545d714-9e9a-491f-b1db-f923116f2565
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Borda_Grafico = 0.005
+		lineageTag: e6a682e8-691f-4aa5-ac43-606e351099c7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Color_IQR2 = "#118DFF"
+		lineageTag: e6fa3b48-d8a4-4edf-af0d-a2b9b5f1f45a
+
+	measure Color_IQR3 = "#12239E"
+		lineageTag: eec6abbd-1148-4f9d-952e-07d425597e36
 
 	partition _BoxPlot = m
 		mode: import

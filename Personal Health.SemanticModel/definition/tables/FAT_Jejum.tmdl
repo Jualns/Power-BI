@@ -1,6 +1,10 @@
 table FAT_Jejum
 	lineageTag: 548a2957-8522-4c96-91b7-c7ec5d3fb647
 
+	measure Dias_de_Impacto_Jejum = 2
+		formatString: 0
+		lineageTag: e2ec60cc-d914-4dd5-b290-d4cadc2759de
+
 	column 'Data Início'
 		dataType: dateTime
 		formatString: Long Date

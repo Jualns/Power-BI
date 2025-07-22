@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 31,
         "y": 0
       },
       "nodes": [
         {
           "location": {
             "x": 608,
-            "y": 14
+            "y": 21
           },
           "nodeIndex": "_Medidas",
           "nodeLineageTag": "6c4d101b-ada0-4f22-babe-c081fcb8086e",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 31,
-            "y": 533
+            "y": 540
           },
           "nodeIndex": "FAT_Jejum",
           "nodeLineageTag": "548a2957-8522-4c96-91b7-c7ec5d3fb647",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 515,
-            "y": 550
+            "y": 557
           },
           "nodeIndex": "FAT_Peso",
           "nodeLineageTag": "739d3e59-58aa-4fba-9b32-d2f86a173456",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 233,
-            "y": 35
+            "y": 42
           },
           "nodeIndex": "_dCalendario",
           "nodeLineageTag": "70df2dab-e9fe-42d0-afa5-b57cb738d421",
@@ -63,13 +63,25 @@
         {
           "location": {
             "x": 950,
-            "y": 31
+            "y": 38
           },
           "nodeIndex": "_BoxPlot",
           "nodeLineageTag": "8c76a51c-799f-4cbe-a02d-32b5b0a732d8",
           "size": {
             "height": 145,
             "width": 145
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1114,
+            "y": 302.5
+          },
+          "nodeIndex": "Periodos_X",
+          "size": {
+            "height": 152,
+            "width": 234
           },
           "zIndex": 0
         }

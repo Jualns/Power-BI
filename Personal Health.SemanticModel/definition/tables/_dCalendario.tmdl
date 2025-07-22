@@ -1,6 +1,32 @@
 table _dCalendario
 	lineageTag: 70df2dab-e9fe-42d0-afa5-b57cb738d421
 
+	measure 'xMD Impacto_Jejum' = ```
+			
+			
+			VAR dat = MAX(_dCalendario[Data])
+			
+			VAR ultimo_jejum = 
+			CALCULATE(
+			    MAX(FAT_Jejum[Datas]),
+			    FAT_Jejum[Datas] <= dat,
+			    ALL(FAT_Jejum)
+			)
+			
+			VAR dias_desde_o_ultimo_jejum = DATEDIFF(ultimo_jejum, dat, DAY)
+			
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(ultimo_jejum), "Normal",
+			    dias_desde_o_ultimo_jejum = 0, "Jejuando",
+			    dias_desde_o_ultimo_jejum <= [Dias_de_Impacto_Jejum], "Pós-Jejum",
+			    "Normal"
+			)
+			    
+			```
+		lineageTag: b2886f83-abf2-4fbd-8451-91a69d4ef661
+
 	column Data
 		dataType: dateTime
 		formatString: Long Date
@@ -99,6 +125,53 @@ table _dCalendario
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+	column Jejuando = ```
+			
+			IF(
+			    ISBLANK(
+			        LOOKUPVALUE(
+			            FAT_Jejum[Datas],
+			            FAT_Jejum[Datas],
+			            _dCalendario[Data]
+			        )
+			    ), 
+			    "Normal",
+			    "Jejuando"
+			)
+			```
+		lineageTag: d923456d-1236-48fc-8d1d-de870d08e5ed
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impacto_Jejum = ```
+			
+			
+			VAR dat = _dCalendario[Data]
+			
+			VAR ultimo_jejum = 
+			CALCULATE(
+			    MAX(FAT_Jejum[Datas]),
+			    FAT_Jejum[Datas] <= dat,
+			    ALL(FAT_Jejum)
+			)
+			
+			VAR dias_desde_o_ultimo_jejum = DATEDIFF(ultimo_jejum, dat, DAY)
+			
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(ultimo_jejum), "Normal",
+			    dias_desde_o_ultimo_jejum = 0, "Jejuando",
+			    dias_desde_o_ultimo_jejum <= [Dias_de_Impacto_Jejum], "Pós-Jejum",
+			    "Normal"
+			)
+			```
+		lineageTag: f40235f6-3af6-4dcf-bac6-b6e49c35243c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition _dCalendario = m
 		mode: import

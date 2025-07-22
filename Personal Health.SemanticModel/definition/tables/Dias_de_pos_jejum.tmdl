@@ -1,0 +1,26 @@
+table Dias_de_pos_jejum
+	lineageTag: f7771d0b-0673-4594-a0d0-12cd4c927d73
+
+	measure 'Valor Dias_de_pos_jejum' = SELECTEDVALUE('Dias_de_pos_jejum'[Dias_de_pos_jejum], 2)
+		formatString: 0
+		lineageTag: 9051bdb0-2cd1-43ab-8c76-369e3595d1df
+
+	column Dias_de_pos_jejum
+		formatString: 0
+		lineageTag: aa764a38-0998-415e-870a-e68b981c1f13
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition Dias_de_pos_jejum = calculated
+		mode: import
+		source = GENERATESERIES(0, 21, 1)
+
+	annotation PBI_Id = 9dc7559b14c14996acf8eecea51fb3e3
+

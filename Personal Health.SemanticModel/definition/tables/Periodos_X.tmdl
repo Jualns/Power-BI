@@ -1,0 +1,49 @@
+table Periodos_X
+	lineageTag: 5016166c-d5fa-46fd-91f5-ccb3e47cd200
+
+	column Parametro_X
+		lineageTag: bf29b74a-aa2c-4c1d-9c1f-61d05d0d8e07
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parametro_X Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parametro_X Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parametro_X Campos'
+		isHidden
+		lineageTag: 993a960b-5bf7-4329-a0f1-e00b3f7c8474
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parametro_X Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parametro_X Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: d8973896-b112-481d-b90d-03a799cd5a3d
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Periodos_X = calculated
+		mode: import
+		source =
+				{
+				    ("Impacto Jejum", NAMEOF('_dCalendario'[Impacto_Jejum]), 0),
+				    ("Horário Treino", NAMEOF('FAT_Peso'[Treino]), 1),
+				    ("Período Dia", NAMEOF('FAT_Peso'[Período do Dia]), 2)
+				}
+
+	annotation PBI_Id = 6687e1925dc64d76aac374cc5003ca8e
+
