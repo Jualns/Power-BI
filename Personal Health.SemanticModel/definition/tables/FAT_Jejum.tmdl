@@ -82,9 +82,11 @@ table FAT_Jejum
 		queryGroup: FATs
 		source = ```
 				let
-				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1QYfcAynBMLwTYWDzlkKWjnXnLSa8I8tw4_gEbWsRWWo/edit?usp=sharing"),
-				    Jejum_Table = Fonte{[name="Jejum",ItemKind="Table"]}[Data],
-				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Jejum_Table, [PromoteAllScalars=true]),
+				    Fonte = Csv.Document(
+				        Web.Contents("https://docs.google.com/spreadsheets/d/e/2PACX-1vQsotOBIQLZD1HNZROsSqg0TU_A9XYZu3DUpqvpKIq6R317OOmIeI-drhC1jGJx8ipXxRPFlzzEyqgq/pub?gid=909800497&single=true&output=csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+				    ),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Linhas Filtradas" = Table.SelectRows(#"Cabeçalhos Promovidos", each [Data Início] <> null and [Data Início] <> ""),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"Data Início", type date}, {"Hora Início", type time}, {"Período (h)", type number}}),
 				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Tipo Alterado", "Data Hora Início", each [Data Início] & [Hora Início], type datetime),

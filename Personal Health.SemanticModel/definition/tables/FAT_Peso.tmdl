@@ -75,9 +75,11 @@ table FAT_Peso
 		queryGroup: FATs
 		source =
 				let
-				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1QYfcAynBMLwTYWDzlkKWjnXnLSa8I8tw4_gEbWsRWWo/edit?usp=sharing"),
-				    Peso_Table = Fonte{[name="Peso",ItemKind="Table"]}[Data],
-				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Peso_Table, [PromoteAllScalars=true]),
+				    Fonte = Csv.Document(
+				        Web.Contents("https://docs.google.com/spreadsheets/d/e/2PACX-1vQsotOBIQLZD1HNZROsSqg0TU_A9XYZu3DUpqvpKIq6R317OOmIeI-drhC1jGJx8ipXxRPFlzzEyqgq/pub?gid=0&single=true&output=csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+				    ),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data", type date}, {"Peso", type number}, {"Horário", type time}, {"Treino", type text}}),
 				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [Data] <> null and [Data] <> ""),
 				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Linhas Filtradas", "DataHora", each [Data] & [Horário], type datetime)
