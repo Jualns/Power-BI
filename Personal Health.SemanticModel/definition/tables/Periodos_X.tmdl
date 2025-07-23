@@ -40,9 +40,8 @@ table Periodos_X
 		mode: import
 		source =
 				{
-				    ("Impacto Jejum", NAMEOF('_dCalendario'[Impacto_Jejum]), 0),
-				    ("Horário Treino", NAMEOF('FAT_Peso'[Treino]), 1),
-				    ("Período Dia", NAMEOF('FAT_Peso'[Período do Dia]), 2)
+				    ("Horário Treino", NAMEOF('FAT_Peso'[Treino]), 0),
+				    ("Período Dia", NAMEOF('FAT_Peso'[Período do Dia]), 1)
 				}
 
 	annotation PBI_Id = 6687e1925dc64d76aac374cc5003ca8e

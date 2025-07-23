@@ -173,6 +173,24 @@ table _dCalendario
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Semana do Ano'
+		dataType: int64
+		formatString: 0
+		lineageTag: ac264a5a-e8ce-46f1-b341-11f9b070346f
+		summarizeBy: sum
+		sourceColumn: Semana do Ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semana do Mês'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a0aa9e3-3c4c-4c41-b5d0-9a9454514817
+		summarizeBy: sum
+		sourceColumn: Semana do Mês
+
+		annotation SummarizationSetBy = Automatic
+
 	partition _dCalendario = m
 		mode: import
 		queryGroup: Auxiliares
@@ -198,9 +216,11 @@ table _dCalendario
 				    AddDia = Table.AddColumn(AddTrimestre, "Dia", each Date.Day([Data]), Int64.Type),
 				    AddDiaSemana = Table.AddColumn(AddDia, "Dia da Semana", each Date.DayOfWeek([Data]) + 1, Int64.Type),
 				    AddNomeDiaSemana = Table.AddColumn(AddDiaSemana, "Nome do Dia da Semana", each Date.ToText([Data], "dddd"), type text),
-				    #"Coluna Duplicada" = Table.DuplicateColumn(AddNomeDiaSemana, "Data", "DataGrafico")
+				    #"Coluna Duplicada" = Table.DuplicateColumn(AddNomeDiaSemana, "Data", "DataGrafico"),
+				    #"Semana do Ano Inserida" = Table.AddColumn(#"Coluna Duplicada", "Semana do Ano", each Date.WeekOfYear([Data]), Int64.Type),
+				    #"Semana do Mês Inserida" = Table.AddColumn(#"Semana do Ano Inserida", "Semana do Mês", each Date.WeekOfMonth([Data]), Int64.Type)
 				in
-				    #"Coluna Duplicada"
+				    #"Semana do Mês Inserida"
 
 	annotation PBI_NavigationStepName = Navegação
 
