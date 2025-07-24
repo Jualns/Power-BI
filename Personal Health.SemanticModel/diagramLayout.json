@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 449,
-        "y": 6
+        "x": 0,
+        "y": 0
       },
       "nodes": [
         {
           "location": {
             "x": 608,
-            "y": 47.25
+            "y": 70.875
           },
           "nodeIndex": "_Medidas",
           "nodeLineageTag": "6c4d101b-ada0-4f22-babe-c081fcb8086e",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 31,
-            "y": 566.25
+            "y": 589.875
           },
           "nodeIndex": "FAT_Jejum",
           "nodeLineageTag": "548a2957-8522-4c96-91b7-c7ec5d3fb647",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 515,
-            "y": 583.25
+            "y": 606.875
           },
           "nodeIndex": "FAT_Peso",
           "nodeLineageTag": "739d3e59-58aa-4fba-9b32-d2f86a173456",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 233,
-            "y": 68.25
+            "y": 91.875
           },
           "nodeIndex": "_dCalendario",
           "nodeLineageTag": "70df2dab-e9fe-42d0-afa5-b57cb738d421",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 950,
-            "y": 64.25
+            "y": 87.875
           },
           "nodeIndex": "_BoxPlot",
           "nodeLineageTag": "8c76a51c-799f-4cbe-a02d-32b5b0a732d8",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 1114,
-            "y": 328.75
+            "y": 352.375
           },
           "nodeIndex": "Periodos_X",
           "size": {
@@ -88,7 +88,7 @@
         {
           "location": {
             "x": 1367,
-            "y": 285.75
+            "y": 309.375
           },
           "nodeIndex": "Dias_de_pos_jejum",
           "nodeLineageTag": "f7771d0b-0673-4594-a0d0-12cd4c927d73",
@@ -97,10 +97,23 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 653.19746099411771,
+            "y": 355.08366350306125
+          },
+          "nodeIndex": "FAT_Peso_Agregado",
+          "nodeLineageTag": "9cfdee91-a1d0-4f08-88e8-caf91156c701",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

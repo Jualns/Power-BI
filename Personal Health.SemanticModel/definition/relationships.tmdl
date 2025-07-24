@@ -27,11 +27,6 @@ relationship d0238480-3a80-3eef-bb87-d4d68a720344
 	fromColumn: FAT_Peso.Data
 	toColumn: _dCalendario.Data
 
-relationship 7b9db249-53c0-48d3-81c3-62f026ad20fe
-	joinOnDateBehavior: datePartOnly
-	fromColumn: _dCalendario.Data
-	toColumn: LocalDateTable_e11bc949-410e-4247-be9f-25716e86d7b8.Date
-
 relationship 20080a94-ba42-5369-f67c-5157f03d071a
 	fromColumn: FAT_Jejum.Datas
 	toColumn: _dCalendario.Data
@@ -40,4 +35,13 @@ relationship 9d724f12-00ae-4456-9ee4-7ca6b34b8e94
 	joinOnDateBehavior: datePartOnly
 	fromColumn: FAT_Peso.'xCL Data Anterior'
 	toColumn: LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836.Date
+
+relationship 52a5d63e-3c6c-422a-bc99-8adc6663e603
+	joinOnDateBehavior: datePartOnly
+	fromColumn: _dCalendario.Data
+	toColumn: LocalDateTable_8faf89aa-07df-4e70-978a-d45f5b152b71.Date
+
+relationship 4d303e19-f300-1d3a-0429-2def655c4506
+	fromColumn: FAT_Peso_Agregado.Data
+	toColumn: _dCalendario.Data
 

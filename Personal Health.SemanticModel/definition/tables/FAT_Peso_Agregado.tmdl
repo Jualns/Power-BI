@@ -1,0 +1,89 @@
+table FAT_Peso_Agregado
+	lineageTag: 9cfdee91-a1d0-4f08-88e8-caf91156c701
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 292a7c72-94a0-4b8e-9871-2f3734dca7f0
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Peso Médio'
+		dataType: double
+		lineageTag: 19c3de28-6fca-43ef-a896-cb74e386c5c3
+		summarizeBy: sum
+		sourceColumn: Peso Médio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Peso Médio Anterior' = ```
+			
+			
+			VAR data_atual = FAT_Peso_Agregado[Data]
+			
+			VAR data_anterior = 
+			MAXX(
+			    FILTER(
+			        FAT_Peso_Agregado,
+			        FAT_Peso_Agregado[Data] < data_atual
+			    ), 
+			    FAT_Peso_Agregado[Data]
+			)
+			
+			RETURN 
+			SUMX(
+			    FILTER(
+			        FAT_Peso_Agregado,
+			        FAT_Peso_Agregado[Data] = data_anterior
+			    ),
+			    FAT_Peso_Agregado[Peso Médio]
+			)
+			```
+		lineageTag: f54da960-7016-47d6-a851-c5b4a60c5df3
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Delta Médio' = IF(ISBLANK(FAT_Peso_Agregado[Peso Médio Anterior]), BLANK(), FAT_Peso_Agregado[Peso Médio] - FAT_Peso_Agregado[Peso Médio Anterior])
+		lineageTag: df66f42d-cb9e-42ba-904e-daba0521e22e
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Delta Médio (%)' =
+			
+			DIVIDE(
+			    FAT_Peso_Agregado[Delta Médio],
+			    FAT_Peso_Agregado[Peso Médio Anterior]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7d0860e3-5adb-40c9-b943-ab9df95f105d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FAT_Peso_Agregado = m
+		mode: import
+		queryGroup: FATs
+		source =
+				let
+				    Fonte = FAT_Peso,
+				    #"Linhas Agrupadas" = Table.Group(Fonte, {"Data"}, {{"Peso Médio", each List.Average([Peso]), type nullable number}}),
+				    #"Linhas Classificadas" = Table.Sort(#"Linhas Agrupadas",{{"Data", Order.Ascending}})
+				in
+				    #"Linhas Classificadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -34,7 +34,7 @@ table FAT_Peso
 			CALCULATE(
 			    [Peso AVG], 
 			    _dCalendario[Data] = DataAnterior
-			)
+			)+0
 			```
 		lineageTag: 078c87f1-dbd0-4333-8b5e-a15336c28a2d
 
@@ -47,13 +47,54 @@ table FAT_Peso
 
 	measure 'Delta Δ Peso AVG (%)' =
 			
+			
+			
 			DIVIDE(
-			    [Peso AVG],
+			    [Peso AVG] - [Peso AVG (D-1)],
 			    [Peso AVG (D-1)],
 			    0
-			)-1
+			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 10c6e507-b0ea-4d0a-af37-702770f35a84
+
+	measure 'xMD Peso Inicial' =
+			
+			
+			VAR data_inicial = MIN(FAT_Peso[Data])
+			
+			RETURN
+			CALCULATE(
+			    AVERAGE(FAT_Peso[Peso]),
+			    FAT_Peso[Data] = data_inicial
+			)
+		lineageTag: 34c308e5-c69c-4b3c-bcc2-a504c02813ac
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'xMD Peso Final' =
+			
+			
+			VAR data_final = MAX(FAT_Peso[Data])
+			
+			RETURN
+			CALCULATE(
+			    AVERAGE(FAT_Peso[Peso]),
+			    FAT_Peso[Data] = data_final
+			)
+		lineageTag: acbd4ba3-8240-4636-a037-1fa2ed29adf7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'xMD Variação Inciial Final' =
+			
+			
+			DIVIDE(
+			    [xMD Peso Final] - [xMD Peso Inicial],
+			    [xMD Peso Inicial],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 79b9db53-358a-45c0-823c-f472b7ce22c7
 
 	column Data
 		dataType: dateTime
@@ -187,6 +228,15 @@ table FAT_Peso
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'xCL PESO Delta Médio (%)' =
+			
+			LOOKUPVALUE(FAT_Peso_Agregado[Delta Médio (%)], FAT_Peso_Agregado[Data], FAT_Peso[Data])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f1b9b20c-b571-4e61-a957-4b95c5766f9d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition FAT_Peso = m
 		mode: import
 		queryGroup: FATs
@@ -199,9 +249,10 @@ table FAT_Peso
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Data", type date}, {"Peso", type number}, {"Horário", type time}, {"Treino", type text}}),
 				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [Data] <> null and [Data] <> ""),
-				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Linhas Filtradas", "DataHora", each [Data] & [Horário], type datetime)
+				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Linhas Filtradas", "DataHora", each [Data] & [Horário], type datetime),
+				    #"Linhas Classificadas" = Table.Sort(#"Data e Hora Mescladas Inseridas",{{"Data", Order.Ascending}})
 				in
-				    #"Data e Hora Mescladas Inseridas"
+				    #"Linhas Classificadas"
 
 	annotation PBI_NavigationStepName = Navegação
 

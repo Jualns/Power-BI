@@ -2583,6 +2583,16 @@ cultureInfo pt-BR
 			          "período do dia": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Período Dia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4459,933 +4469,1156 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "FAT_jejum.dias_de_impacto_jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "ConceptualProperty": "Dias_de_Impacto_Jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias de impacto jejum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dias_de_Impacto_Jejum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_data_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xCL Data Anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xCL data anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "xcl information anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "xcl fact anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "xcl info anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "xcl statistic anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "xcl document anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xcl figure anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "xcl record anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "VariationSource": "xCL Data Anterior",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_data_anterior.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "VariationSource": "xCL Data Anterior",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL data anterior ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xcl information anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl fact anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl info anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl statistic anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl document anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl figure anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl record anterior ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_data_anterior.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "VariationSource": "xCL Data Anterior",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL data anterior trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xcl information anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl fact anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl info anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl statistic anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl document anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl figure anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl record anterior trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_data_anterior.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "VariationSource": "xCL Data Anterior",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL data anterior mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xcl information anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl fact anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl info anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl statistic anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl document anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl figure anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl record anterior mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_data_anterior.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "VariationSource": "xCL Data Anterior",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL data anterior dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xcl information anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl fact anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl info anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl statistic anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "xcl document anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl figure anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "xcl record anterior dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_peso_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xCL Peso Anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xCL peso anterior": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xCL_delta_peso_médio_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xCL Delta Peso Médio (#)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xCL delta peso médio (#)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL delta peso médio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.data_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Data Anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "fact anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "info anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "statistic anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "document anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "figure anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "record anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FAT_peso.peso_AVG_D1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Peso AVG (D-1)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peso AVG (D-1)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peso AVG": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "peso average (d-1)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.delta_δ_peso_AVG_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Delta Δ Peso AVG (#)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta δ peso AVG (#)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta δ peso AVG": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.delta_δ_peso_AVG": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Delta Δ Peso AVG (%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta δ peso AVG": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta δ peso AVG (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta δ peso average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "FAT_peso.xMD_peso_inicial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xMD Peso Inicial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD peso inicial": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xMD_peso_final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xMD Peso Final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD peso final": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xmd peso decider": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xMD_variação_inciial_final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xMD Variação Inciial Final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD variação inciial final": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xmd variação inciial decider": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "xmd variação inciial round": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "xmd variação inciial match": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "xmd variação inciial game": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "Variação Inicial para Final (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.jejuando": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "Jejuando"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jejuando": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.impacto_jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "Impacto_Jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "impacto jejum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Impacto_Jejum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.semana_do_ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "Semana do Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana do ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.semana_do_mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "Semana do Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana do mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.xMD_Impacto_Jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "xMD Impacto_Jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD Impacto_Jejum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "periodos_X": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Periodos_X"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "periodos X": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "periodo X": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Periodos_X": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "periodos_X.parametro_X": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Periodos_X",
+			          "ConceptualProperty": "Parametro_X"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parametro X": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Parametro_X": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "periodos_X.Parametro_X_campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Periodos_X",
+			          "ConceptualProperty": "Parametro_X Campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "Parametro_X campos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "periodos_X.Parametro_X_pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Periodos_X",
+			          "ConceptualProperty": "Parametro_X Pedido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "Parametro_X pedido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dias_de_pos_jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dias_de_pos_jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias de pos jejum": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "Dias_de_pos_jejum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.8613
+			          }
+			        }
+			      ]
+			    },
+			    "dias_de_pos_jejum.dias_de_pos_jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dias_de_pos_jejum",
+			          "ConceptualProperty": "Dias_de_pos_jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias de pos jejum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dias_de_pos_jejum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dias_de_pos_jejum.valor_Dias_de_pos_jejum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dias_de_pos_jejum",
+			          "ConceptualProperty": "Valor Dias_de_pos_jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor Dias_de_pos_jejum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "entity__dCalendario_data_grafico_mê_has_entity__dCalendario_data_grafico_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.mê"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.dia": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.dia"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê5"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_trimestre_has_entity__dCalendario_data_grafico_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.trimestre"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres5"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_ano_has_entity__dCalendario_data_grafico_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.ano": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.ano"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.ano"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos5"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.dia": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.ano": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_grafico_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data_grafico": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico"
-			          }
-			        },
-			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data_grafico"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_graficos_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_mê_has_entity__dCalendario_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.mê"
-			          }
-			        },
-			        "entity__dCalendario.data.dia": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.mê"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.dia"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê4"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_trimestre_has_entity__dCalendario_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.trimestre"
-			          }
-			        },
-			        "entity__dCalendario.data.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.mê"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres4"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_ano_has_entity__dCalendario_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.ano": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.ano"
-			          }
-			        },
-			        "entity__dCalendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.ano"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "entity__dCalendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos4"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data.dia": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data.mê": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "entity__dCalendario.data.ano": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
-			        }
-			      ]
-			    },
-			    "entity__dCalendario_data_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "_dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__dCalendario.data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data"
-			          }
-			        },
-			        "entity__dCalendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__dCalendario.data"
-			            },
-			            "Object": {
-			              "Role": "entity__dCalendario.data.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "FAT_peso_data_hora_mê_has_FAT_peso_data_hora_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso.data_hora.mê": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.mê"
-			          }
-			        },
-			        "FAT_peso.data_hora.dia": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.dia"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê3"
-			        }
-			      ]
-			    },
-			    "FAT_peso_data_hora_trimestre_has_FAT_peso_data_hora_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso.data_hora.trimestre": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.trimestre"
-			          }
-			        },
-			        "FAT_peso.data_hora.mê": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres3"
-			        }
-			      ]
-			    },
-			    "FAT_peso_data_hora_ano_has_FAT_peso_data_hora_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso.data_hora.ano": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.ano"
-			          }
-			        },
-			        "FAT_peso.data_hora.trimestre": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.ano"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_peso.data_hora.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_peso.data_hora.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos3"
-			        }
-			      ]
-			    },
 			    "FAT_peso_data_hora_hierarquia_de_data_has_FAT_peso_data_hora_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso"
@@ -5415,7 +5648,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
+			          "ID": "hierarquia_de_data_have_dias"
 			        }
 			      ]
 			    },
@@ -5448,7 +5681,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
+			          "ID": "hierarquia_de_data_have_mê"
 			        }
 			      ]
 			    },
@@ -5481,7 +5714,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
+			          "ID": "hierarquia_de_data_have_trimestres"
 			        }
 			      ]
 			    },
@@ -5514,7 +5747,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
+			          "ID": "hierarquia_de_data_have_anos"
 			        }
 			      ]
 			    },
@@ -5580,7 +5813,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias3"
+			          "ID": "mê_have_dias"
 			        },
 			        {
 			          "Attribute": {
@@ -5593,7 +5826,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê3"
+			          "ID": "dias_have_mê"
 			        },
 			        {
 			          "Preposition": {
@@ -5646,7 +5879,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
+			          "ID": "trimestres_have_mê"
 			        },
 			        {
 			          "Attribute": {
@@ -5659,7 +5892,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
+			          "ID": "mê_have_trimestres"
 			        },
 			        {
 			          "Preposition": {
@@ -5712,7 +5945,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
+			          "ID": "anos_have_trimestres"
 			        },
 			        {
 			          "Attribute": {
@@ -5725,7 +5958,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
+			          "ID": "trimestres_have_anos"
 			        },
 			        {
 			          "Preposition": {
@@ -5778,7 +6011,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -5811,7 +6044,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -5844,7 +6077,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres3"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -5877,7 +6110,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos3"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -5943,7 +6176,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias4"
+			          "ID": "mê_have_dias1"
 			        },
 			        {
 			          "Attribute": {
@@ -5956,7 +6189,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê4"
+			          "ID": "dias_have_mê1"
 			        },
 			        {
 			          "Preposition": {
@@ -6009,7 +6242,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê4"
+			          "ID": "trimestres_have_mê1"
 			        },
 			        {
 			          "Attribute": {
@@ -6022,7 +6255,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres4"
+			          "ID": "mê_have_trimestres1"
 			        },
 			        {
 			          "Preposition": {
@@ -6075,7 +6308,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres4"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -6088,7 +6321,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos4"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -6141,7 +6374,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias4"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -6174,7 +6407,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê4"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -6207,7 +6440,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres4"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -6240,7 +6473,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos4"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -6306,7 +6539,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias5"
+			          "ID": "mê_have_dias2"
 			        },
 			        {
 			          "Attribute": {
@@ -6319,7 +6552,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê5"
+			          "ID": "dias_have_mê2"
 			        },
 			        {
 			          "Preposition": {
@@ -6372,7 +6605,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê5"
+			          "ID": "trimestres_have_mê2"
 			        },
 			        {
 			          "Attribute": {
@@ -6385,7 +6618,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres5"
+			          "ID": "mê_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -6438,7 +6671,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres5"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -6451,7 +6684,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos5"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -6504,7 +6737,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias5"
+			          "ID": "hierarquia_de_data_have_dias3"
 			        }
 			      ]
 			    },
@@ -6537,7 +6770,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê5"
+			          "ID": "hierarquia_de_data_have_mê3"
 			        }
 			      ]
 			    },
@@ -6570,7 +6803,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres5"
+			          "ID": "hierarquia_de_data_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -6603,7 +6836,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos5"
+			          "ID": "hierarquia_de_data_have_anos3"
 			        }
 			      ]
 			    },
@@ -6743,6 +6976,633 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "Phrasing_dCalendarios_have_FAT_jejums"
+			        }
+			      ]
+			    },
+			    "dias_de_pos_jejum_has_valor_Dias_de_pos_jejum": {
+			      "Binding": {
+			        "ConceptualEntity": "Dias_de_pos_jejum"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dias_de_pos_jejum": {
+			          "Target": {
+			            "Entity": "dias_de_pos_jejum"
+			          }
+			        },
+			        "dias_de_pos_jejum.valor_Dias_de_pos_jejum": {
+			          "Target": {
+			            "Entity": "dias_de_pos_jejum.valor_Dias_de_pos_jejum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dias_de_pos_jejum"
+			            },
+			            "Object": {
+			              "Role": "dias_de_pos_jejum.valor_Dias_de_pos_jejum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_de_pos_jejums_have_valor_Dias_de_pos_jejum"
+			        }
+			      ]
+			    },
+			    "dias_de_pos_jejum_has_dias_de_pos_jejum": {
+			      "Binding": {
+			        "ConceptualEntity": "Dias_de_pos_jejum"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dias_de_pos_jejum": {
+			          "Target": {
+			            "Entity": "dias_de_pos_jejum"
+			          }
+			        },
+			        "dias_de_pos_jejum.dias_de_pos_jejum": {
+			          "Target": {
+			            "Entity": "dias_de_pos_jejum.dias_de_pos_jejum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dias_de_pos_jejum"
+			            },
+			            "Object": {
+			              "Role": "dias_de_pos_jejum.dias_de_pos_jejum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_de_pos_jejums_have_dias_de_pos_jejums"
+			        }
+			      ]
+			    },
+			    "periodos_X_has_parametro_X": {
+			      "Binding": {
+			        "ConceptualEntity": "Periodos_X"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "periodos_X": {
+			          "Target": {
+			            "Entity": "periodos_X"
+			          }
+			        },
+			        "periodos_X.parametro_X": {
+			          "Target": {
+			            "Entity": "periodos_X.parametro_X"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "periodos_X"
+			            },
+			            "Object": {
+			              "Role": "periodos_X.parametro_X"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "periodos_X_have_parametro_X"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_xMD_Impacto_Jejum": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.xMD_Impacto_Jejum": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.xMD_Impacto_Jejum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.xMD_Impacto_Jejum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_xMD_Impacto_Jejum"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_semana_do_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.semana_do_mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.semana_do_mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.semana_do_mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_semana_do_mê"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_semana_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.semana_do_ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.semana_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.semana_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_semana_do_anos"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_impacto_jejum": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.impacto_jejum": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.impacto_jejum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.impacto_jejum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_impacto_jejums"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_jejuando": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.jejuando": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.jejuando"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.jejuando"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_jejuandos"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xMD_variação_inciial_final": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xMD_variação_inciial_final": {
+			          "Target": {
+			            "Entity": "FAT_peso.xMD_variação_inciial_final"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xMD_variação_inciial_final"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_variação_inciial_final"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xMD_peso_final": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xMD_peso_final": {
+			          "Target": {
+			            "Entity": "FAT_peso.xMD_peso_final"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xMD_peso_final"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_peso_final"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xMD_peso_inicial": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xMD_peso_inicial": {
+			          "Target": {
+			            "Entity": "FAT_peso.xMD_peso_inicial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xMD_peso_inicial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_peso_inicial"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_delta_δ_peso_AVG": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.delta_δ_peso_AVG": {
+			          "Target": {
+			            "Entity": "FAT_peso.delta_δ_peso_AVG"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.delta_δ_peso_AVG"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_delta_δ_peso_AVG"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_delta_δ_peso_AVG_": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.delta_δ_peso_AVG_": {
+			          "Target": {
+			            "Entity": "FAT_peso.delta_δ_peso_AVG_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.delta_δ_peso_AVG_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_delta_δ_peso_AVG_"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_peso_AVG_D1": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.peso_AVG_D1": {
+			          "Target": {
+			            "Entity": "FAT_peso.peso_AVG_D1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.peso_AVG_D1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_peso_AVG_D1"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_data_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.data_anterior": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_data_anterior"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xCL_delta_peso_médio_": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xCL_delta_peso_médio_": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_delta_peso_médio_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_delta_peso_médio_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xCL_delta_peso_médio_"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xCL_peso_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xCL_peso_anterior": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_peso_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_peso_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xCL_peso_anterior"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xCL_data_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xCL_data_anterior"
+			        }
+			      ]
+			    },
+			    "FAT_jejum_has_dias_de_impacto_jejum": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Jejum"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_jejum": {
+			          "Target": {
+			            "Entity": "FAT_jejum"
+			          }
+			        },
+			        "FAT_jejum.dias_de_impacto_jejum": {
+			          "Target": {
+			            "Entity": "FAT_jejum.dias_de_impacto_jejum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_jejum"
+			            },
+			            "Object": {
+			              "Role": "FAT_jejum.dias_de_impacto_jejum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_jejums_have_dias_de_impacto_jejum"
 			        }
 			      ]
 			    },
@@ -8030,6 +8890,1293 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "FAT_jejums_have_data_inícios"
+			        }
+			      ]
+			    },
+			    "FAT_peso_data_hora_ano_has_FAT_peso_data_hora_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.data_hora.ano": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.ano"
+			          }
+			        },
+			        "FAT_peso.data_hora.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.ano"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "FAT_peso_data_hora_trimestre_has_FAT_peso_data_hora_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.data_hora.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.trimestre"
+			          }
+			        },
+			        "FAT_peso.data_hora.mê": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "FAT_peso_data_hora_mê_has_FAT_peso_data_hora_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.data_hora.mê": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.mê"
+			          }
+			        },
+			        "FAT_peso.data_hora.dia": {
+			          "Target": {
+			            "Entity": "FAT_peso.data_hora.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.dia"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.data_hora.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data"
+			          }
+			        },
+			        "entity__dCalendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data.ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_hierarquia_de_data_has_entity__dCalendario_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data.dia": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_ano_has_entity__dCalendario_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.ano"
+			          }
+			        },
+			        "entity__dCalendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.ano"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_trimestre_has_entity__dCalendario_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.trimestre"
+			          }
+			        },
+			        "entity__dCalendario.data.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.mê"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_mê_has_entity__dCalendario_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.mê"
+			          }
+			        },
+			        "entity__dCalendario.data.dia": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.mê"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.dia"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê4"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_graficos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_hierarquia_de_data_has_entity__dCalendario_data_grafico_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.dia": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_ano_has_entity__dCalendario_data_grafico_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.ano"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.ano"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres5"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos5"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_trimestre_has_entity__dCalendario_data_grafico_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.trimestre": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.trimestre"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê5"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres5"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres5"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_data_grafico_mê_has_entity__dCalendario_data_grafico_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.data_grafico.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.mê"
+			          }
+			        },
+			        "entity__dCalendario.data_grafico.dia": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.data_grafico.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias5"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.dia"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê5"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.data_grafico.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.data_grafico.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê5"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "xCL_data_anterior_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_hierarquia_de_data_has_FAT_peso_xCL_data_anterior_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.ano": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_hierarquia_de_data_has_FAT_peso_xCL_data_anterior_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_hierarquia_de_data_has_FAT_peso_xCL_data_anterior_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.mê": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_hierarquia_de_data_has_FAT_peso_xCL_data_anterior_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.dia": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_ano_has_FAT_peso_xCL_data_anterior_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.ano": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.ano"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.ano"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres6"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos6"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_trimestre_has_FAT_peso_xCL_data_anterior_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.trimestre"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.mê": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê6"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres6"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres6"
+			        }
+			      ]
+			    },
+			    "FAT_peso_xCL_data_anterior_mê_has_FAT_peso_xCL_data_anterior_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso.xCL_data_anterior.mê": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.mê"
+			          }
+			        },
+			        "FAT_peso.xCL_data_anterior.dia": {
+			          "Target": {
+			            "Entity": "FAT_peso.xCL_data_anterior.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias6"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.dia"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê6"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_peso.xCL_data_anterior.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_peso.xCL_data_anterior.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê6"
 			        }
 			      ]
 			    }
