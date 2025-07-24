@@ -18,7 +18,7 @@ annotation PBI_QueryOrder = ["FAT_Jejum","FAT_Peso","_dCalendario","_Medidas","_
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.145.1262.0 (25.07)+10bdeda5ab0db954b2cf824e7a117ad7cee97f88
+annotation PBIDesktopVersion = 2.145.1105.0 (25.07)+decbc46fce458c5b8d5109d6f32a743f2ac949c8
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -36,6 +36,7 @@ ref table LocalDateTable_90d545ec-3f6b-4bdd-935f-9335440d5167
 ref table LocalDateTable_e11bc949-410e-4247-be9f-25716e86d7b8
 ref table Periodos_X
 ref table Dias_de_pos_jejum
+ref table LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836
 
 ref cultureInfo pt-BR
 

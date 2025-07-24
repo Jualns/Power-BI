@@ -36,3 +36,8 @@ relationship 20080a94-ba42-5369-f67c-5157f03d071a
 	fromColumn: FAT_Jejum.Datas
 	toColumn: _dCalendario.Data
 
+relationship 9d724f12-00ae-4456-9ee4-7ca6b34b8e94
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FAT_Peso.'xCL Data Anterior'
+	toColumn: LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836.Date
+

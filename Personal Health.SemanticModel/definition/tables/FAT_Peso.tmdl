@@ -1,33 +1,35 @@
 table FAT_Peso
 	lineageTag: 739d3e59-58aa-4fba-9b32-d2f86a173456
 
-	measure 'Data Anterior' =
+	measure 'Data Anterior' = ```
 			
-			
-			VAR DataAtual = MAX(_dCalendario[Data])
-			
+			VAR DataAtual = MAX(FAT_Peso[Data])
 			RETURN
 			CALCULATE(
-			    MAX(_dCalendario[Data]),
+			    MAX(FAT_Peso[Data]),
 			    FILTER(
-			        ALL(_dCalendario),
-			        _dCalendario[Data] < DataAtual
+			        ALL(FAT_Peso),
+			        FAT_Peso[Data] < DataAtual
 			    )
 			)
+			
+			```
 		formatString: General Date
 		lineageTag: cc905144-485c-4678-ba1b-f3f8eeb721fd
 
 	measure 'Peso AVG (D-1)' = ```
 			
-			VAR DataAtual = MAX(_dCalendario[Data])
+			VAR DataAtual = MAX(FAT_Peso[Data])
 			
-			VAR DataAnterior = CALCULATE(
-			    MAX(_dCalendario[Data]),
+			VAR DataAnterior = 
+			CALCULATE(
+			    MAX(FAT_Peso[Data]),
 			    FILTER(
-			        ALL(_dCalendario),
-			        _dCalendario[Data] < DataAtual
+			        ALL(FAT_Peso),
+			        FAT_Peso[Data] < DataAtual
 			    )
 			)
+			
 			RETURN
 			CALCULATE(
 			    [Peso AVG], 
@@ -49,10 +51,9 @@ table FAT_Peso
 			    [Peso AVG],
 			    [Peso AVG (D-1)],
 			    0
-			)
+			)-1
+		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 10c6e507-b0ea-4d0a-af37-702770f35a84
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Data
 		dataType: dateTime
@@ -120,6 +121,69 @@ table FAT_Peso
 			)
 		lineageTag: 178da8c1-fb63-4bfb-bc1b-bba22b6724b1
 		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'xCL Data Anterior' = ```
+			
+			
+			VAR DataAtual = FAT_Peso[Data]
+			
+			RETURN
+			CALCULATE(
+			    MAX(FAT_Peso[Data]),
+			    FILTER(
+			        ALL(FAT_Peso),
+			        FAT_Peso[Data] < DataAtual
+			    )
+			)
+			
+			```
+		formatString: General Date
+		lineageTag: 56c47fef-c21b-4fc2-aa42-631b1430a886
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 9d724f12-00ae-4456-9ee4-7ca6b34b8e94
+			defaultHierarchy: LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'xCL Peso Anterior' = ```
+			
+			
+			VAR DataAtual = FAT_Peso[Data]
+			
+			VAR DataAnterior = FAT_Peso[xCL Data Anterior]
+			
+			RETURN
+			CALCULATE(
+			    [Peso AVG], 
+			    FILTER(
+			        ALL(FAT_Peso),
+			        FAT_Peso[Data] = DataAnterior
+			    )
+			)
+			```
+		lineageTag: a51ea80e-e0fb-447b-97cd-91505ba674e4
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'xCL Delta Peso Médio (#)' = ```
+			
+			IF(
+			    ISBLANK(FAT_Peso[xCL Peso Anterior]), 
+			    0, 
+			    FAT_Peso[Peso] - FAT_Peso[xCL Peso Anterior]
+			)
+			```
+		formatString: 0.00
+		lineageTag: 4fe0906c-79e6-4dae-8c1b-99570582aabc
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
