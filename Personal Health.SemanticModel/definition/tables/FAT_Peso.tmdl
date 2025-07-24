@@ -1,6 +1,59 @@
 table FAT_Peso
 	lineageTag: 739d3e59-58aa-4fba-9b32-d2f86a173456
 
+	measure 'Data Anterior' =
+			
+			
+			VAR DataAtual = MAX(_dCalendario[Data])
+			
+			RETURN
+			CALCULATE(
+			    MAX(_dCalendario[Data]),
+			    FILTER(
+			        ALL(_dCalendario),
+			        _dCalendario[Data] < DataAtual
+			    )
+			)
+		formatString: General Date
+		lineageTag: cc905144-485c-4678-ba1b-f3f8eeb721fd
+
+	measure 'Peso AVG (D-1)' = ```
+			
+			VAR DataAtual = MAX(_dCalendario[Data])
+			
+			VAR DataAnterior = CALCULATE(
+			    MAX(_dCalendario[Data]),
+			    FILTER(
+			        ALL(_dCalendario),
+			        _dCalendario[Data] < DataAtual
+			    )
+			)
+			RETURN
+			CALCULATE(
+			    [Peso AVG], 
+			    _dCalendario[Data] = DataAnterior
+			)
+			```
+		lineageTag: 078c87f1-dbd0-4333-8b5e-a15336c28a2d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delta Δ Peso AVG (#)' = [Peso AVG] - FAT_Peso[Peso AVG (D-1)]
+		lineageTag: 891070a4-fa94-41b3-906e-05f2e71e1aed
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delta Δ Peso AVG (%)' =
+			
+			DIVIDE(
+			    [Peso AVG],
+			    [Peso AVG (D-1)],
+			    0
+			)
+		lineageTag: 10c6e507-b0ea-4d0a-af37-702770f35a84
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Data
 		dataType: dateTime
 		formatString: Long Date
