@@ -42,7 +42,7 @@ table Periodos_X
 				{
 				    ("Horário Treino", NAMEOF('FAT_Peso'[Treino]), 0),
 				    ("Período Dia", NAMEOF('FAT_Peso'[Período do Dia]), 1),
-				    ("Data", NAMEOF(_dCalendario[DataGrafico]), 2)
+				    ("Semana", NAMEOF(_dCalendario[Semana do Ano]), 2)
 				}
 
 	annotation PBI_Id = 6687e1925dc64d76aac374cc5003ca8e

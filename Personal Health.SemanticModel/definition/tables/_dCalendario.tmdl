@@ -191,6 +191,17 @@ table _dCalendario
 
 		annotation SummarizationSetBy = Automatic
 
+	hierarchy 'Hierarquia Mes-Sem'
+		lineageTag: 4cfb5745-48ef-474c-ba9d-498d5bccf86c
+
+		level Mês
+			lineageTag: 1e9f13ad-f549-4bce-b507-89f0c3a654dc
+			column: Mês
+
+		level 'Semana do Ano'
+			lineageTag: aef83ae1-c82e-4e6b-a668-c374b62040df
+			column: 'Semana do Ano'
+
 	partition _dCalendario = m
 		mode: import
 		queryGroup: Auxiliares
