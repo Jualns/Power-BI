@@ -27,11 +27,539 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum.data_início.hierarquia_de_data": {
+			    "FAT_peso.status_do_registro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Status do Registro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status do registro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "importance do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prestige do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prominence do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "condition do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "class do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "grade do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "level do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "position do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "rank do registro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Horário Treino": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.xMD_BLANK_jejum": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Início",
+			          "ConceptualProperty": "xMD BLANK Jejum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD BLANK jejum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ㅤje": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data_fim.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data Fim",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data fim dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record fim dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data_fim.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data Fim",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data fim mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record fim mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data_fim.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data Fim",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data fim trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record fim trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data_fim.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data Fim",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data fim ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record fim ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data_fim.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data Fim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
 			        }
@@ -115,293 +643,120 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum.data_início.ano": {
+			    "FAT_jejum.data_fim": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Ano"
+			          "ConceptualProperty": "Data Fim"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "ano": {
+			          "data fim": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "data início ano": {
-			            "State": "Generated"
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
 			          }
 			        },
 			        {
-			          "information início ano": {
+			          "information fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "fact início ano": {
+			          "fact fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "info início ano": {
+			          "info fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "statistic início ano": {
+			          "statistic fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "document início ano": {
+			          "document fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "figure início ano": {
+			          "figure fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "record início ano": {
+			          "record fim": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
-			    "FAT_jejum.data_início.trimestre": {
+			    "FAT_jejum.período_do_jejum": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Trimestre"
+			          "ConceptualProperty": "Período do jejum"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "trimestre": {
+			          "período do jejum": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data início trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "fact início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "info início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "statistic início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "document início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "figure início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "record início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
 			          }
 			        }
 			      ]
 			    },
-			    "FAT_jejum.data_início.mê": {
+			    "FAT_jejum.data.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Mês"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data início mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "fact início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "info início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "statistic início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "document início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "figure início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "record início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_início.dia": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Início",
+			          "VariationSource": "Data",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
 			          "HierarchyLevel": "Dia"
@@ -415,87 +770,369 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "data início dia": {
+			          "data dia": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "information início dia": {
+			          "information dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "fact início dia": {
+			          "fact dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "info início dia": {
+			          "info dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "statistic início dia": {
+			          "statistic dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "document início dia": {
+			          "document dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "figure início dia": {
+			          "figure dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "record início dia": {
+			          "record dia": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
 			    },
-			    "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			    "FAT_jejum.data.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Início",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "VariationSource": "Data",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
 			        }
@@ -579,845 +1216,98 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum.data_hora_início.ano": {
+			    "FAT_jejum.data1": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Ano"
+			          "ConceptualProperty": "Data"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "ano": {
+			          "data": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "data hora início ano": {
-			            "State": "Generated"
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
 			          }
 			        },
 			        {
-			          "information hora início ano": {
+			          "information": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "fact hora início ano": {
+			          "fact": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "info hora início ano": {
+			          "info": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "statistic hora início ano": {
+			          "statistic": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "document hora início ano": {
+			          "document": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.599
+			            "Weight": 0.714
 			          }
 			        },
 			        {
-			          "figure hora início ano": {
+			          "figure": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.599
+			            "Weight": 0.714
 			          }
 			        },
 			        {
-			          "record hora início ano": {
+			          "record": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.599
+			            "Weight": 0.714
 			          }
 			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_início.trimestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Trimestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora início trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora início trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_início.mê": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Mês"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora início mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora início mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_início.dia": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Início",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Dia"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora início dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora início dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Fim",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "hierarquia de data": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "hierarquia de information": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de fact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de info": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de statistic": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "hierarquia de document": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "hierarquia de figure": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "hierarquia de record": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_fim.ano": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Fim",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Ano"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ano": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora fim ano": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora fim ano": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_fim.trimestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Fim",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Trimestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora fim trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora fim trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_fim.mê": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Fim",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Mês"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora fim mê": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora fim mê": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "FAT_jejum.data_hora_fim.dia": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "FAT_Jejum",
-			          "VariationSource": "Data Hora Fim",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Hierarquia de datas",
-			          "HierarchyLevel": "Dia"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data hora fim dia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "information hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "fact hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "info hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "statistic hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "document hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "figure hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "record hora fim dia": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "FAT_jejum.data": {
 			      "Definition": {
@@ -1534,7 +1424,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso.data": {
+			    "FAT_peso.data_hora": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Peso",
@@ -1544,8 +1434,15 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "data": {
+			          "data hora": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataHora": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        },
 			        {
@@ -1555,73 +1452,73 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "information": {
+			          "information hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "fact": {
+			          "fact hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "info": {
+			          "info hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "statistic": {
+			          "statistic hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "document": {
+			          "document hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "figure": {
+			          "figure hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "record": {
+			          "record hora": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.582
 			          }
 			        }
 			      ],
@@ -5356,9 +5253,1453 @@ cultureInfo pt-BR
 			        "percentage",
 			        "%"
 			      ]
+			    },
+			    "FAT_peso.hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FAT_peso.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__dCalendario.hierarquia_messem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "Hierarchy": "Hierarquia Mes-Sem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia mes-sem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia me-sem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "hierarquia mes sem": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hierarquia me sem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.hierarquia_messem.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "Hierarchy": "Hierarquia Mes-Sem",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.hierarquia_messem.semana_do_ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "Hierarchy": "Hierarquia Mes-Sem",
+			          "HierarchyLevel": "Semana do Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana do ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.xMD_aux_peso_MAX_constant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "xMD Aux Peso MAX Constant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD aux peso MAX constant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xmd aux peso maximum constant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FAT recaida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FAT_Recaida": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data_hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "ConceptualProperty": "DataHora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataHora": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record hora": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FAT_recaida.data_hora.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "VariationSource": "DataHora",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data_hora.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "VariationSource": "DataHora",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data hora ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record hora ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data_hora.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "VariationSource": "DataHora",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data hora trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record hora trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data_hora.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "VariationSource": "DataHora",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data hora mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record hora mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data_hora.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "VariationSource": "DataHora",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data hora dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record hora dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.comentário_sobre_recaída": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "ConceptualProperty": "Comentário sobre Recaída"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comentário sobre recaída": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.gravidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "ConceptualProperty": "Gravidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gravidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_recaida.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FAT_recaida.xMD_BLANK_recaida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Recaida",
+			          "ConceptualProperty": "xMD BLANK Recaida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD BLANK recaida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ㅤre": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "FAT_recaida_data_hora_mê_has_FAT_recaida_data_hora_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.mê": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.mê"
+			          }
+			        },
+			        "FAT_recaida.data_hora.dia": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.dia"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê6"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_trimestre_has_FAT_recaida_data_hora_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.trimestre"
+			          }
+			        },
+			        "FAT_recaida.data_hora.mê": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres6"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_ano_has_FAT_recaida_data_hora_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.ano": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.ano"
+			          }
+			        },
+			        "FAT_recaida.data_hora.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.ano"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos6"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_hierarquia_de_data_has_FAT_recaida_data_hora_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_recaida.data_hora.dia": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_hierarquia_de_data_has_FAT_recaida_data_hora_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_recaida.data_hora.mê": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_hierarquia_de_data_has_FAT_recaida_data_hora_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_recaida.data_hora.trimestre": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_hierarquia_de_data_has_FAT_recaida_data_hora_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.hierarquia_de_data"
+			          }
+			        },
+			        "FAT_recaida.data_hora.ano": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_data_hora_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida.data_hora": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora"
+			          }
+			        },
+			        "FAT_recaida.data_hora.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida.data_hora"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_horas_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_hierarquia_messem_mê_has_entity__dCalendario_hierarquia_messem_semana_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.hierarquia_messem.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem.mê"
+			          }
+			        },
+			        "entity__dCalendario.hierarquia_messem.semana_do_ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.hierarquia_messem.mê"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_semana_do_anos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "semana_do_anos_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "semana_do_anos_are_in_mê"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_hierarquia_messem_has_semana_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.hierarquia_messem": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem"
+			          }
+			        },
+			        "entity__dCalendario.hierarquia_messem.semana_do_ano": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.hierarquia_messem"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem.semana_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_messems_have_semana_do_anos"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_hierarquia_messem_has_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario.hierarquia_messem": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem"
+			          }
+			        },
+			        "entity__dCalendario.hierarquia_messem.mê": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario.hierarquia_messem"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_messems_have_mê"
+			        }
+			      ]
+			    },
 			    "FAT_peso_xCL_data_anterior_mê_has_FAT_peso_xCL_data_anterior_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso"
@@ -5388,7 +6729,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
+			          "ID": "mê_have_dias1"
 			        },
 			        {
 			          "Attribute": {
@@ -5401,7 +6742,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
+			          "ID": "dias_have_mê1"
 			        },
 			        {
 			          "Preposition": {
@@ -5421,7 +6762,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê6"
+			          "ID": "dias_are_in_mê5"
 			        }
 			      ]
 			    },
@@ -5454,7 +6795,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
+			          "ID": "trimestres_have_mê1"
 			        },
 			        {
 			          "Attribute": {
@@ -5467,7 +6808,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
+			          "ID": "mê_have_trimestres1"
 			        },
 			        {
 			          "Preposition": {
@@ -5487,7 +6828,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres6"
+			          "ID": "mê_are_in_trimestres5"
 			        }
 			      ]
 			    },
@@ -5520,7 +6861,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -5533,7 +6874,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -5553,7 +6894,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos6"
+			          "ID": "trimestres_are_in_anos5"
 			        }
 			      ]
 			    },
@@ -5586,7 +6927,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -5619,7 +6960,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -5652,7 +6993,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -5685,7 +7026,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -5751,7 +7092,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias1"
+			          "ID": "mê_have_dias2"
 			        },
 			        {
 			          "Attribute": {
@@ -5764,7 +7105,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê1"
+			          "ID": "dias_have_mê2"
 			        },
 			        {
 			          "Preposition": {
@@ -5784,7 +7125,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê5"
+			          "ID": "dias_are_in_mê4"
 			        }
 			      ]
 			    },
@@ -5817,7 +7158,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
+			          "ID": "trimestres_have_mê2"
 			        },
 			        {
 			          "Attribute": {
@@ -5830,7 +7171,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
+			          "ID": "mê_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -5850,7 +7191,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres5"
+			          "ID": "mê_are_in_trimestres4"
 			        }
 			      ]
 			    },
@@ -5883,7 +7224,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -5896,7 +7237,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -5916,7 +7257,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos5"
+			          "ID": "trimestres_are_in_anos4"
 			        }
 			      ]
 			    },
@@ -5949,7 +7290,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -5982,7 +7323,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -6015,7 +7356,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -6048,7 +7389,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -6114,7 +7455,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias2"
+			          "ID": "mê_have_dias3"
 			        },
 			        {
 			          "Attribute": {
@@ -6127,7 +7468,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê2"
+			          "ID": "dias_have_mê3"
 			        },
 			        {
 			          "Preposition": {
@@ -6147,7 +7488,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê4"
+			          "ID": "dias_are_in_mê3"
 			        }
 			      ]
 			    },
@@ -6180,7 +7521,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
+			          "ID": "trimestres_have_mê3"
 			        },
 			        {
 			          "Attribute": {
@@ -6193,7 +7534,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
+			          "ID": "mê_have_trimestres3"
 			        },
 			        {
 			          "Preposition": {
@@ -6213,7 +7554,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres4"
+			          "ID": "mê_are_in_trimestres3"
 			        }
 			      ]
 			    },
@@ -6246,7 +7587,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
+			          "ID": "anos_have_trimestres3"
 			        },
 			        {
 			          "Attribute": {
@@ -6259,7 +7600,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
+			          "ID": "trimestres_have_anos3"
 			        },
 			        {
 			          "Preposition": {
@@ -6279,7 +7620,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos4"
+			          "ID": "trimestres_are_in_anos3"
 			        }
 			      ]
 			    },
@@ -6312,7 +7653,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
+			          "ID": "hierarquia_de_data_have_dias3"
 			        }
 			      ]
 			    },
@@ -6345,7 +7686,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
+			          "ID": "hierarquia_de_data_have_mê3"
 			        }
 			      ]
 			    },
@@ -6378,7 +7719,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
+			          "ID": "hierarquia_de_data_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -6411,7 +7752,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
+			          "ID": "hierarquia_de_data_have_anos3"
 			        }
 			      ]
 			    },
@@ -6477,7 +7818,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias3"
+			          "ID": "mê_have_dias4"
 			        },
 			        {
 			          "Attribute": {
@@ -6490,7 +7831,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê3"
+			          "ID": "dias_have_mê4"
 			        },
 			        {
 			          "Preposition": {
@@ -6510,7 +7851,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê3"
+			          "ID": "dias_are_in_mê2"
 			        }
 			      ]
 			    },
@@ -6543,7 +7884,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
+			          "ID": "trimestres_have_mê4"
 			        },
 			        {
 			          "Attribute": {
@@ -6556,7 +7897,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
+			          "ID": "mê_have_trimestres4"
 			        },
 			        {
 			          "Preposition": {
@@ -6576,7 +7917,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres3"
+			          "ID": "mê_are_in_trimestres2"
 			        }
 			      ]
 			    },
@@ -6609,7 +7950,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
+			          "ID": "anos_have_trimestres4"
 			        },
 			        {
 			          "Attribute": {
@@ -6622,7 +7963,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
+			          "ID": "trimestres_have_anos4"
 			        },
 			        {
 			          "Preposition": {
@@ -6642,7 +7983,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos3"
+			          "ID": "trimestres_are_in_anos2"
 			        }
 			      ]
 			    },
@@ -6675,7 +8016,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
+			          "ID": "hierarquia_de_data_have_dias4"
 			        }
 			      ]
 			    },
@@ -6708,7 +8049,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
+			          "ID": "hierarquia_de_data_have_mê4"
 			        }
 			      ]
 			    },
@@ -6741,7 +8082,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres3"
+			          "ID": "hierarquia_de_data_have_trimestres4"
 			        }
 			      ]
 			    },
@@ -6774,7 +8115,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos3"
+			          "ID": "hierarquia_de_data_have_anos4"
 			        }
 			      ]
 			    },
@@ -6807,24 +8148,24 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_horas_have_hierarquia_de_data"
+			          "ID": "data_horas_have_hierarquia_de_data1"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_fim_mê_has_FAT_jejum_data_hora_fim_dia": {
+			    "FAT_jejum_data_mê_has_FAT_jejum_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_fim.mê": {
+			        "FAT_jejum.data.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.mê"
+			            "Entity": "FAT_jejum.data.mê"
 			          }
 			        },
-			        "FAT_jejum.data_hora_fim.dia": {
+			        "FAT_jejum.data.dia": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.dia"
+			            "Entity": "FAT_jejum.data.dia"
 			          }
 			        }
 			      },
@@ -6832,373 +8173,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.dia"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê2"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_trimestre_has_FAT_jejum_data_hora_fim_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.trimestre": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.trimestre"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.mê": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres2"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_ano_has_FAT_jejum_data_hora_fim_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.ano": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.ano"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.trimestre": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.ano"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos2"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_hierarquia_de_data_has_FAT_jejum_data_hora_fim_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.dia": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias4"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_hierarquia_de_data_has_FAT_jejum_data_hora_fim_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.mê": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê4"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_hierarquia_de_data_has_FAT_jejum_data_hora_fim_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.trimestre": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres4"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_hierarquia_de_data_has_FAT_jejum_data_hora_fim_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.ano": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos4"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_fim_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_fim": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim"
-			          }
-			        },
-			        "FAT_jejum.data_hora_fim.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_fim"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_hora_fims_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "FAT_jejum_data_hora_início_mê_has_FAT_jejum_data_hora_início_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_jejum.data_hora_início.mê": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.mê"
-			          }
-			        },
-			        "FAT_jejum.data_hora_início.dia": {
-			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
-			            },
-			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.dia"
+			              "Role": "FAT_jejum.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7208,10 +8186,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.dia"
+			              "Role": "FAT_jejum.data.dia"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7221,7 +8199,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.dia"
+			              "Role": "FAT_jejum.data.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -7231,7 +8209,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7240,20 +8218,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_trimestre_has_FAT_jejum_data_hora_início_mê": {
+			    "FAT_jejum_data_trimestre_has_FAT_jejum_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.trimestre": {
+			        "FAT_jejum.data.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.trimestre"
+			            "Entity": "FAT_jejum.data.trimestre"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.mê": {
+			        "FAT_jejum.data.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.mê"
+			            "Entity": "FAT_jejum.data.mê"
 			          }
 			        }
 			      },
@@ -7261,10 +8239,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7274,10 +8252,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7287,7 +8265,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -7297,7 +8275,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7306,20 +8284,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_ano_has_FAT_jejum_data_hora_início_trimestre": {
+			    "FAT_jejum_data_ano_has_FAT_jejum_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.ano": {
+			        "FAT_jejum.data.ano": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.ano"
+			            "Entity": "FAT_jejum.data.ano"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.trimestre": {
+			        "FAT_jejum.data.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.trimestre"
+			            "Entity": "FAT_jejum.data.trimestre"
 			          }
 			        }
 			      },
@@ -7327,10 +8305,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.ano"
+			              "Role": "FAT_jejum.data.ano"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7340,10 +8318,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.ano"
+			              "Role": "FAT_jejum.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7353,7 +8331,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -7363,7 +8341,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.ano"
+			              "Role": "FAT_jejum.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7372,20 +8350,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_hierarquia_de_data_has_FAT_jejum_data_hora_início_dia": {
+			    "FAT_jejum_data_hierarquia_de_data_has_FAT_jejum_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			        "FAT_jejum.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.dia": {
+			        "FAT_jejum.data.dia": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.dia"
+			            "Entity": "FAT_jejum.data.dia"
 			          }
 			        }
 			      },
@@ -7393,10 +8371,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.dia"
+			              "Role": "FAT_jejum.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7405,20 +8383,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_hierarquia_de_data_has_FAT_jejum_data_hora_início_mê": {
+			    "FAT_jejum_data_hierarquia_de_data_has_FAT_jejum_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			        "FAT_jejum.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.mê": {
+			        "FAT_jejum.data.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.mê"
+			            "Entity": "FAT_jejum.data.mê"
 			          }
 			        }
 			      },
@@ -7426,10 +8404,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.mê"
+			              "Role": "FAT_jejum.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7438,20 +8416,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_hierarquia_de_data_has_FAT_jejum_data_hora_início_trimestre": {
+			    "FAT_jejum_data_hierarquia_de_data_has_FAT_jejum_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			        "FAT_jejum.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.trimestre": {
+			        "FAT_jejum.data.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.trimestre"
+			            "Entity": "FAT_jejum.data.trimestre"
 			          }
 			        }
 			      },
@@ -7459,10 +8437,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.trimestre"
+			              "Role": "FAT_jejum.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7471,20 +8449,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_hierarquia_de_data_has_FAT_jejum_data_hora_início_ano": {
+			    "FAT_jejum_data_hierarquia_de_data_has_FAT_jejum_data_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			        "FAT_jejum.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.ano": {
+			        "FAT_jejum.data.ano": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.ano"
+			            "Entity": "FAT_jejum.data.ano"
 			          }
 			        }
 			      },
@@ -7492,10 +8470,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.ano"
+			              "Role": "FAT_jejum.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7504,20 +8482,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_hora_início_has_hierarquia_de_data": {
+			    "FAT_jejum_data1_has_FAT_jejum_data_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_hora_início": {
+			        "FAT_jejum.data1": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início"
+			            "Entity": "FAT_jejum.data1"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início.hierarquia_de_data": {
+			        "FAT_jejum.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -7525,32 +8503,32 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_hora_início"
+			              "Role": "FAT_jejum.data1"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_hora_inícios_have_hierarquia_de_data"
+			          "ID": "data_have_hierarquia_de_data1"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_mê_has_FAT_jejum_data_início_dia": {
+			    "FAT_jejum_data_fim_mê_has_FAT_jejum_data_fim_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.mê": {
+			        "FAT_jejum.data_fim.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.mê"
+			            "Entity": "FAT_jejum.data_fim.mê"
 			          }
 			        },
-			        "FAT_jejum.data_início.dia": {
+			        "FAT_jejum.data_fim.dia": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.dia"
+			            "Entity": "FAT_jejum.data_fim.dia"
 			          }
 			        }
 			      },
@@ -7558,10 +8536,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.dia"
+			              "Role": "FAT_jejum.data_fim.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7571,10 +8549,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.dia"
+			              "Role": "FAT_jejum.data_fim.dia"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7584,7 +8562,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.dia"
+			              "Role": "FAT_jejum.data_fim.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -7594,7 +8572,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7603,20 +8581,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_trimestre_has_FAT_jejum_data_início_mê": {
+			    "FAT_jejum_data_fim_trimestre_has_FAT_jejum_data_fim_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.trimestre": {
+			        "FAT_jejum.data_fim.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.trimestre"
+			            "Entity": "FAT_jejum.data_fim.trimestre"
 			          }
 			        },
-			        "FAT_jejum.data_início.mê": {
+			        "FAT_jejum.data_fim.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.mê"
+			            "Entity": "FAT_jejum.data_fim.mê"
 			          }
 			        }
 			      },
@@ -7624,10 +8602,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7637,10 +8615,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7650,7 +8628,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -7660,7 +8638,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7669,20 +8647,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_ano_has_FAT_jejum_data_início_trimestre": {
+			    "FAT_jejum_data_fim_ano_has_FAT_jejum_data_fim_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.ano": {
+			        "FAT_jejum.data_fim.ano": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.ano"
+			            "Entity": "FAT_jejum.data_fim.ano"
 			          }
 			        },
-			        "FAT_jejum.data_início.trimestre": {
+			        "FAT_jejum.data_fim.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.trimestre"
+			            "Entity": "FAT_jejum.data_fim.trimestre"
 			          }
 			        }
 			      },
@@ -7690,10 +8668,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.ano"
+			              "Role": "FAT_jejum.data_fim.ano"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7703,10 +8681,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.ano"
+			              "Role": "FAT_jejum.data_fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7716,7 +8694,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -7726,7 +8704,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.ano"
+			              "Role": "FAT_jejum.data_fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7735,20 +8713,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_hierarquia_de_data_has_FAT_jejum_data_início_dia": {
+			    "FAT_jejum_data_fim_hierarquia_de_data_has_FAT_jejum_data_fim_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.hierarquia_de_data": {
+			        "FAT_jejum.data_fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data_fim.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_início.dia": {
+			        "FAT_jejum.data_fim.dia": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.dia"
+			            "Entity": "FAT_jejum.data_fim.dia"
 			          }
 			        }
 			      },
@@ -7756,10 +8734,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data_fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.dia"
+			              "Role": "FAT_jejum.data_fim.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7768,20 +8746,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_hierarquia_de_data_has_FAT_jejum_data_início_mê": {
+			    "FAT_jejum_data_fim_hierarquia_de_data_has_FAT_jejum_data_fim_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.hierarquia_de_data": {
+			        "FAT_jejum.data_fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data_fim.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_início.mê": {
+			        "FAT_jejum.data_fim.mê": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.mê"
+			            "Entity": "FAT_jejum.data_fim.mê"
 			          }
 			        }
 			      },
@@ -7789,10 +8767,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data_fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.mê"
+			              "Role": "FAT_jejum.data_fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7801,20 +8779,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_hierarquia_de_data_has_FAT_jejum_data_início_trimestre": {
+			    "FAT_jejum_data_fim_hierarquia_de_data_has_FAT_jejum_data_fim_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.hierarquia_de_data": {
+			        "FAT_jejum.data_fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data_fim.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_início.trimestre": {
+			        "FAT_jejum.data_fim.trimestre": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.trimestre"
+			            "Entity": "FAT_jejum.data_fim.trimestre"
 			          }
 			        }
 			      },
@@ -7822,10 +8800,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data_fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.trimestre"
+			              "Role": "FAT_jejum.data_fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7834,20 +8812,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_hierarquia_de_data_has_FAT_jejum_data_início_ano": {
+			    "FAT_jejum_data_fim_hierarquia_de_data_has_FAT_jejum_data_fim_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início.hierarquia_de_data": {
+			        "FAT_jejum.data_fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data_fim.hierarquia_de_data"
 			          }
 			        },
-			        "FAT_jejum.data_início.ano": {
+			        "FAT_jejum.data_fim.ano": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.ano"
+			            "Entity": "FAT_jejum.data_fim.ano"
 			          }
 			        }
 			      },
@@ -7855,10 +8833,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data_fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.ano"
+			              "Role": "FAT_jejum.data_fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7867,20 +8845,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_data_início_has_hierarquia_de_data": {
+			    "FAT_jejum_data_fim_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum.data_início": {
+			        "FAT_jejum.data_fim": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início"
+			            "Entity": "FAT_jejum.data_fim"
 			          }
 			        },
-			        "FAT_jejum.data_início.hierarquia_de_data": {
+			        "FAT_jejum.data_fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início.hierarquia_de_data"
+			            "Entity": "FAT_jejum.data_fim.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -7888,15 +8866,68 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum.data_início"
+			              "Role": "FAT_jejum.data_fim"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início.hierarquia_de_data"
+			              "Role": "FAT_jejum.data_fim.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_inícios_have_hierarquia_de_data"
+			          "ID": "data_fims_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_entity__dCalendario": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          },
+			          "Nouns": [
+			            {
+			              "data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have__dCalendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_FAT_recaidas"
 			        }
 			      ]
 			    },
@@ -8056,6 +9087,336 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "Phrasing_dCalendarios_have_FAT_jejums"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_xMD_BLANK_recaida": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "FAT_recaida.xMD_BLANK_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida.xMD_BLANK_recaida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.xMD_BLANK_recaida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have_xMD_BLANK_recaida"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_FAT_recaida_xMD_BLANK_recaida": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_recaida.xMD_BLANK_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida.xMD_BLANK_recaida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.xMD_BLANK_recaida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_BLANK_recaida"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "FAT_recaida.data": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have_data"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "FAT_recaida.gravidade": {
+			          "Target": {
+			            "Entity": "FAT_recaida.gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have_gravidades"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_comentário_sobre_recaída": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "FAT_recaida.comentário_sobre_recaída": {
+			          "Target": {
+			            "Entity": "FAT_recaida.comentário_sobre_recaída"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.comentário_sobre_recaída"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have_comentário_sobre_recaídas"
+			        }
+			      ]
+			    },
+			    "FAT_recaida_has_data_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Recaida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_recaida": {
+			          "Target": {
+			            "Entity": "FAT_recaida"
+			          }
+			        },
+			        "FAT_recaida.data_hora": {
+			          "Target": {
+			            "Entity": "FAT_recaida.data_hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_recaida"
+			            },
+			            "Object": {
+			              "Role": "FAT_recaida.data_hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_recaidas_have_data_horas"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_entity__medida_xMD_aux_peso_MAX_constant": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "entity__medida.xMD_aux_peso_MAX_constant": {
+			          "Target": {
+			            "Entity": "entity__medida.xMD_aux_peso_MAX_constant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.xMD_aux_peso_MAX_constant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_aux_peso_MAX_constant"
+			        }
+			      ]
+			    },
+			    "entity__dCalendario_has_hierarquia_messem": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.hierarquia_messem": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.hierarquia_messem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.hierarquia_messem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_hierarquia_messems"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.data": {
+			          "Target": {
+			            "Entity": "FAT_peso.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_data"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.hora": {
+			          "Target": {
+			            "Entity": "FAT_peso.hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_horas"
 			        }
 			      ]
 			    },
@@ -9808,105 +11169,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso_has_data_hora": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso": {
-			          "Target": {
-			            "Entity": "FAT_peso"
-			          }
-			        },
-			        "FAT_peso.data_hora": {
-			          "Target": {
-			            "Entity": "FAT_peso.data_hora"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.data_hora"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_data_horas"
-			        }
-			      ]
-			    },
-			    "FAT_peso_has_treino": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso": {
-			          "Target": {
-			            "Entity": "FAT_peso"
-			          }
-			        },
-			        "FAT_peso.treino": {
-			          "Target": {
-			            "Entity": "FAT_peso.treino"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.treino"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_treinos"
-			        }
-			      ]
-			    },
-			    "FAT_peso_has_horário": {
-			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FAT_peso": {
-			          "Target": {
-			            "Entity": "FAT_peso"
-			          }
-			        },
-			        "FAT_peso.horário": {
-			          "Target": {
-			            "Entity": "FAT_peso.horário"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FAT_peso"
-			            },
-			            "Object": {
-			              "Role": "FAT_peso.horário"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_horários"
-			        }
-			      ]
-			    },
 			    "FAT_peso_has_peso": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso"
@@ -9940,7 +11202,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso_has_data": {
+			    "FAT_peso_has_data_hora": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso"
 			      },
@@ -9951,9 +11213,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_peso"
 			          }
 			        },
-			        "FAT_peso.data": {
+			        "FAT_peso.data_hora": {
 			          "Target": {
-			            "Entity": "FAT_peso.data"
+			            "Entity": "FAT_peso.data_hora"
 			          }
 			        }
 			      },
@@ -9964,12 +11226,12 @@ cultureInfo pt-BR
 			              "Role": "FAT_peso"
 			            },
 			            "Object": {
-			              "Role": "FAT_peso.data"
+			              "Role": "FAT_peso.data_hora"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_data"
+			          "ID": "FAT_pesos_have_data_horas"
 			        }
 			      ]
 			    },
@@ -10006,7 +11268,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_jejum_has_data_hora_fim": {
+			    "FAT_jejum_has_data1": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
@@ -10017,9 +11279,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_jejum"
 			          }
 			        },
-			        "FAT_jejum.data_hora_fim": {
+			        "FAT_jejum.data1": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_fim"
+			            "Entity": "FAT_jejum.data1"
 			          }
 			        }
 			      },
@@ -10030,16 +11292,16 @@ cultureInfo pt-BR
 			              "Role": "FAT_jejum"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_fim"
+			              "Role": "FAT_jejum.data1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_jejums_have_data_hora_fims"
+			          "ID": "FAT_jejums_have_data1"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_has_data_hora_início": {
+			    "FAT_jejum_has_período_do_jejum": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
@@ -10050,9 +11312,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_jejum"
 			          }
 			        },
-			        "FAT_jejum.data_hora_início": {
+			        "FAT_jejum.período_do_jejum": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_hora_início"
+			            "Entity": "FAT_jejum.período_do_jejum"
 			          }
 			        }
 			      },
@@ -10063,16 +11325,16 @@ cultureInfo pt-BR
 			              "Role": "FAT_jejum"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_hora_início"
+			              "Role": "FAT_jejum.período_do_jejum"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_jejums_have_data_hora_inícios"
+			          "ID": "FAT_jejums_have_período_do_jejums"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_has_período_h": {
+			    "FAT_jejum_has_data_fim": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
@@ -10083,9 +11345,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_jejum"
 			          }
 			        },
-			        "FAT_jejum.período_h": {
+			        "FAT_jejum.data_fim": {
 			          "Target": {
-			            "Entity": "FAT_jejum.período_h"
+			            "Entity": "FAT_jejum.data_fim"
 			          }
 			        }
 			      },
@@ -10096,29 +11358,29 @@ cultureInfo pt-BR
 			              "Role": "FAT_jejum"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.período_h"
+			              "Role": "FAT_jejum.data_fim"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_jejums_have_período_h"
+			          "ID": "FAT_jejums_have_data_fims"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_has_hora_início": {
+			    "FAT_peso_has_FAT_jejum_xMD_BLANK_jejum": {
 			      "Binding": {
-			        "ConceptualEntity": "FAT_Jejum"
+			        "ConceptualEntity": "FAT_Peso"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_jejum": {
+			        "FAT_peso": {
 			          "Target": {
-			            "Entity": "FAT_jejum"
+			            "Entity": "FAT_peso"
 			          }
 			        },
-			        "FAT_jejum.hora_início": {
+			        "FAT_jejum.xMD_BLANK_jejum": {
 			          "Target": {
-			            "Entity": "FAT_jejum.hora_início"
+			            "Entity": "FAT_jejum.xMD_BLANK_jejum"
 			          }
 			        }
 			      },
@@ -10126,19 +11388,19 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_jejum"
+			              "Role": "FAT_peso"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.hora_início"
+			              "Role": "FAT_jejum.xMD_BLANK_jejum"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_jejums_have_hora_inícios"
+			          "ID": "FAT_pesos_have_xMD_BLANK_jejum"
 			        }
 			      ]
 			    },
-			    "FAT_jejum_has_data_início": {
+			    "FAT_jejum_has_xMD_BLANK_jejum": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Jejum"
 			      },
@@ -10149,9 +11411,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_jejum"
 			          }
 			        },
-			        "FAT_jejum.data_início": {
+			        "FAT_jejum.xMD_BLANK_jejum": {
 			          "Target": {
-			            "Entity": "FAT_jejum.data_início"
+			            "Entity": "FAT_jejum.xMD_BLANK_jejum"
 			          }
 			        }
 			      },
@@ -10162,12 +11424,45 @@ cultureInfo pt-BR
 			              "Role": "FAT_jejum"
 			            },
 			            "Object": {
-			              "Role": "FAT_jejum.data_início"
+			              "Role": "FAT_jejum.xMD_BLANK_jejum"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_jejums_have_data_inícios"
+			          "ID": "FAT_jejums_have_xMD_BLANK_jejum"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_status_do_registro": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.status_do_registro": {
+			          "Target": {
+			            "Entity": "FAT_peso.status_do_registro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.status_do_registro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_status_do_registros"
 			        }
 			      ]
 			    }

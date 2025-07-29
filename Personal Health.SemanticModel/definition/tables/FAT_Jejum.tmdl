@@ -5,7 +5,7 @@ table FAT_Jejum
 		formatString: 0
 		lineageTag: e2ec60cc-d914-4dd5-b290-d4cadc2759de
 
-	measure 'xMD BLANK jejum' = BLANK()
+	measure 'xMD BLANK Jejum' = IF(MIN(FAT_Jejum[Datas]), [xMD Aux Peso MAX Constant])
 		formatString: 0
 		lineageTag: f85166e3-57bf-4ebe-8115-fcfdb22df19e
 

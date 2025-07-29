@@ -13,6 +13,26 @@ table _Medidas
 		formatString: 0
 		lineageTag: dad6e766-392b-489b-b7a5-fa3324abb18e
 
+	measure 'xMD Aux Peso MAX Constant' =
+			
+			CALCULATE(
+			    [Peso MAX],
+			    ALLSELECTED(_dCalendario)
+			)
+		lineageTag: 8edf3089-56bd-4203-a776-8c3a8f4e2d24
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'xMD Aux Peso MIN Constant' =
+			
+			CALCULATE(
+			    [Peso MIN],
+			    ALLSELECTED(_dCalendario)
+			)
+		lineageTag: b72f56f9-07d1-4556-8c6a-3091529b9f9c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition _Medidas = m
 		mode: import
 		queryGroup: Auxiliares

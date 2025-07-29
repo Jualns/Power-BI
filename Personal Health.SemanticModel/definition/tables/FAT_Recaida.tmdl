@@ -1,7 +1,7 @@
 table FAT_Recaida
 	lineageTag: 29fdc26a-0e12-4b15-9786-be83b65eef4d
 
-	measure 'xMD BLANK recaida' = BLANK()
+	measure 'xMD BLANK Recaida' = IF(MIN(FAT_Recaida[Data]), [xMD Aux Peso MAX Constant])
 		formatString: 0
 		lineageTag: 4555b7d5-ea7c-4312-acc8-4cb7d3bc8784
 
