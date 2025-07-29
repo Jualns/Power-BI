@@ -1,0 +1,20 @@
+expression Origem_Jejum =
+		let
+		    Fonte = Csv.Document(
+		        Web.Contents("https://docs.google.com/spreadsheets/d/e/2PACX-1vQsotOBIQLZD1HNZROsSqg0TU_A9XYZu3DUpqvpKIq6R317OOmIeI-drhC1jGJx8ipXxRPFlzzEyqgq/pub?gid=575703710&single=true&output=csv"),
+		        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+		    ),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Outras Colunas Removidas" = Table.SelectColumns(#"Cabeçalhos Promovidos",{"Tipo de Registro", "Data", "Período do jejum", "Comentário sobre Recaída", "Gravidade"}),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Outras Colunas Removidas",{"Período do jejum", type number}, "en-us"),
+		    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Tipo Alterado",{{"Gravidade", Int64.Type}, {"Data", type datetime}}),
+		    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado1", "Data Fim", each Duration.From([#"Período do jejum"]/24)+[Data], type datetime)
+		in
+		    #"Personalização Adicionada"
+	lineageTag: f62af38f-e088-4b0d-a0e8-500e146396ee
+	queryGroup: Auxiliares
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -14,7 +14,7 @@ queryGroup Auxiliares
 
 	annotation PBI_QueryGroupOrder = 1
 
-annotation PBI_QueryOrder = ["FAT_Jejum","FAT_Peso","_dCalendario","_Medidas","_BoxPlot","FAT_Peso_Agregado"]
+annotation PBI_QueryOrder = ["FAT_Jejum","FAT_Recaida","FAT_Peso","Origem_Jejum","_dCalendario","_Medidas","_BoxPlot","FAT_Peso_Agregado"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -24,11 +24,7 @@ annotation PBI_ProTooling = ["DevMode"]
 
 ref table FAT_Jejum
 ref table DateTableTemplate_280a0df5-23f4-428b-9f3a-0dea84bc645d
-ref table LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318
-ref table LocalDateTable_dc0389f5-3054-4f5c-b0b9-e77fd63f72d5
-ref table LocalDateTable_1befbc04-7ef6-4dd7-a908-e51b7fd51d18
 ref table FAT_Peso
-ref table LocalDateTable_af909f62-53b7-4b6a-a12a-b2fc9b1cba77
 ref table _dCalendario
 ref table _Medidas
 ref table _BoxPlot
@@ -37,7 +33,12 @@ ref table Periodos_X
 ref table Dias_de_pos_jejum
 ref table LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836
 ref table FAT_Peso_Agregado
-ref table LocalDateTable_8faf89aa-07df-4e70-978a-d45f5b152b71
+ref table FAT_Recaida
+ref table LocalDateTable_11c4c236-366a-4e96-a77b-2f10a58fabd0
+ref table LocalDateTable_84968592-1ceb-4997-a2ac-98e3e2fc247e
+ref table LocalDateTable_32197afb-0d31-4b29-8264-04f3d74da4c9
+ref table LocalDateTable_bd17440b-3a15-4198-a156-ead2b15b5deb
+ref table LocalDateTable_a9c17052-0788-4313-b385-c42793c32703
 
 ref cultureInfo pt-BR
 

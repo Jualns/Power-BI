@@ -1,0 +1,66 @@
+table FAT_Recaida
+	lineageTag: 29fdc26a-0e12-4b15-9786-be83b65eef4d
+
+	measure 'xMD BLANK recaida' = BLANK()
+		formatString: 0
+		lineageTag: 4555b7d5-ea7c-4312-acc8-4cb7d3bc8784
+
+	column DataHora
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1cc91fb9-748d-4a3f-a43b-fe56542d31d7
+		summarizeBy: none
+		sourceColumn: DataHora
+
+		variation Variation
+			isDefault
+			relationship: f13f1180-797a-4b59-83f2-99b87eee4838
+			defaultHierarchy: LocalDateTable_a9c17052-0788-4313-b385-c42793c32703.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comentário sobre Recaída'
+		dataType: string
+		lineageTag: 536b6bd5-5b5e-4c47-9297-eaf5b5247439
+		summarizeBy: none
+		sourceColumn: Comentário sobre Recaída
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gravidade
+		dataType: int64
+		formatString: 0
+		lineageTag: a3df1382-c047-4e9d-b4cf-57ec460c3f61
+		summarizeBy: sum
+		sourceColumn: Gravidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4f5ceb85-3b66-4c56-9be7-30c0f0fe68ca
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition FAT_Recaida = m
+		mode: import
+		queryGroup: FATs
+		source =
+				let
+				    Fonte = Origem_Jejum,
+				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each ([Tipo de Registro] = "Recaída")),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Linhas Filtradas",{"Data", "Comentário sobre Recaída", "Gravidade"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Outras Colunas Removidas",{{"Data", "DataHora"}}),
+				    #"Data Inserida" = Table.AddColumn(#"Colunas Renomeadas", "Data", each DateTime.Date([DataHora]), type date)
+				in
+				    #"Data Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

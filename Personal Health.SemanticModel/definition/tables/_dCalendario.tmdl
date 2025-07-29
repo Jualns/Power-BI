@@ -36,8 +36,8 @@ table _dCalendario
 
 		variation Variation
 			isDefault
-			relationship: 52a5d63e-3c6c-422a-bc99-8adc6663e603
-			defaultHierarchy: LocalDateTable_8faf89aa-07df-4e70-978a-d45f5b152b71.'Hierarquia de datas'
+			relationship: f95cb0c8-551a-494e-be5e-3f616c173c56
+			defaultHierarchy: LocalDateTable_bd17440b-3a15-4198-a156-ead2b15b5deb.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -209,7 +209,7 @@ table _dCalendario
 				let
 				    Fonte = FAT_Peso[Data],
 				    DatasValidas = List.RemoveNulls(Fonte),
-				    DataMin = List.Min(DatasValidas),
+				    DataMin = Date.From(List.Min(DatasValidas)),
 				    DataMaxOriginal = List.Max(DatasValidas),
 				
 				    // Ajusta DataMax para ser o último dia do ano da DataMaxOriginal

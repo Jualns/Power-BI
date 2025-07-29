@@ -5,70 +5,9 @@ table FAT_Jejum
 		formatString: 0
 		lineageTag: e2ec60cc-d914-4dd5-b290-d4cadc2759de
 
-	column 'Data Início'
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: 695b0959-e45d-436e-8c2a-d324cae3414c
-		summarizeBy: none
-		sourceColumn: Data Início
-
-		variation Variation
-			isDefault
-			relationship: 7f32a451-d359-40be-b5be-36365c830ab5
-			defaultHierarchy: LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318.'Hierarquia de datas'
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
-	column 'Hora Início'
-		dataType: dateTime
-		formatString: Long Time
-		lineageTag: 5a6567a7-1ec0-4030-acf7-500e2362f8b6
-		summarizeBy: none
-		sourceColumn: Hora Início
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Time
-
-	column 'Período (h)'
-		dataType: double
-		lineageTag: a4594735-0a7a-4051-b606-ed5dff694341
-		summarizeBy: sum
-		sourceColumn: Período (h)
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column 'Data Hora Início'
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: fac019f3-7e9b-4006-8a5d-1dcc9fb271e4
-		summarizeBy: none
-		sourceColumn: Data Hora Início
-
-		variation Variation
-			isDefault
-			relationship: 55e2336a-6993-444d-b658-7c35afbef217
-			defaultHierarchy: LocalDateTable_dc0389f5-3054-4f5c-b0b9-e77fd63f72d5.'Hierarquia de datas'
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Data Hora Fim'
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: 09e027a7-d893-42be-92c7-f8c92a7167a3
-		summarizeBy: none
-		sourceColumn: Data Hora Fim
-
-		variation Variation
-			isDefault
-			relationship: bec82356-9c0e-4cfb-83f2-ed0d83bba071
-			defaultHierarchy: LocalDateTable_1befbc04-7ef6-4dd7-a908-e51b7fd51d18.'Hierarquia de datas'
-
-		annotation SummarizationSetBy = Automatic
+	measure 'xMD BLANK jejum' = BLANK()
+		formatString: 0
+		lineageTag: f85166e3-57bf-4ebe-8115-fcfdb22df19e
 
 	column Datas
 		dataType: dateTime
@@ -81,29 +20,60 @@ table FAT_Jejum
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column Data
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c4d79522-1cf6-424b-8f5f-174bc1dc60ec
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 645517b0-5419-4d44-9d69-6ddbb876ae91
+			defaultHierarchy: LocalDateTable_11c4c236-366a-4e96-a77b-2f10a58fabd0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Período do jejum'
+		dataType: double
+		lineageTag: ce3300b7-f278-407b-ada4-579f5a69798a
+		summarizeBy: sum
+		sourceColumn: Período do jejum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Data Fim'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e82d5022-c437-4074-be2a-523130930273
+		summarizeBy: none
+		sourceColumn: Data Fim
+
+		variation Variation
+			isDefault
+			relationship: 0d5e343a-658a-46be-97e8-7e5eb417cfb7
+			defaultHierarchy: LocalDateTable_84968592-1ceb-4997-a2ac-98e3e2fc247e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
 	partition FAT_Jejum = m
 		mode: import
 		queryGroup: FATs
 		source = ```
 				let
-				    Fonte = Csv.Document(
-				        Web.Contents("https://docs.google.com/spreadsheets/d/e/2PACX-1vQsotOBIQLZD1HNZROsSqg0TU_A9XYZu3DUpqvpKIq6R317OOmIeI-drhC1jGJx8ipXxRPFlzzEyqgq/pub?gid=909800497&single=true&output=csv"),
-				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
-				    ),
-				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Linhas Filtradas" = Table.SelectRows(#"Cabeçalhos Promovidos", each [Data Início] <> null and [Data Início] <> ""),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"Data Início", type date}, {"Hora Início", type time}, {"Período (h)", type number}}),
-				    #"Data e Hora Mescladas Inseridas" = Table.AddColumn(#"Tipo Alterado", "Data Hora Início", each [Data Início] & [Hora Início], type datetime),
-				    #"Personalização Adicionada" = Table.AddColumn(#"Data e Hora Mescladas Inseridas", "Data Hora Fim", each Duration.From([#"Período (h)"]/24)+[#"Data Hora Início"], type datetime),
-				
+				    Fonte = Origem_Jejum,
+				    #"Linhas Filtradas1" = Table.SelectRows(Fonte, each ([Tipo de Registro] = "Jejum")),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Linhas Filtradas1",{"Data", "Período do jejum", "Data Fim"}),
 				    // 1. Adiciona uma nova coluna "ListaDatas" com a lista de datas (tipo date) entre as duas colunas datetime
 				    AddListaDatas = Table.AddColumn(
-				        #"Personalização Adicionada",
+				        #"Outras Colunas Removidas",
 				        "Datas",
 				        each 
 				            let
-				                inicio = DateTime.Date([#"Data Hora Início"]),
-				                fim = DateTime.Date([#"Data Hora Fim"]),
+				                inicio = DateTime.Date([Data]),
+				                fim = DateTime.Date([#"Data Fim"]),
 				                dias = Duration.Days(fim - inicio) + 1,
 				                lista = List.Dates(inicio, dias, #duration(1,0,0,0))
 				            in

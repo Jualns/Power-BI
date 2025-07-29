@@ -1,7 +1,7 @@
 table _Medidas
 	lineageTag: 6c4d101b-ada0-4f22-babe-c081fcb8086e
 
-	measure 'Horas Médias em Jejum' = AVERAGE(FAT_Jejum[Período (h)])
+	measure 'Horas Médias em Jejum' = AVERAGE(FAT_Jejum[Período do jejum])
 		lineageTag: 04ff43f4-18e0-46e4-81d7-f8fd1f68cc30
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -9,7 +9,7 @@ table _Medidas
 	measure Ultimo_Registro = "Último Registro: " & FORMAT(MAX(FAT_Peso[DataHora]), "dd/mm/yyyy hh:nn")
 		lineageTag: c339ebce-6c30-4162-b64f-d6c188039762
 
-	measure 'Qtde de Treinos' = DISTINCTCOUNT(FAT_Peso[Data])
+	measure 'Qtde de Treinos' = DISTINCTCOUNT(FAT_Peso[DataHora])
 		formatString: 0
 		lineageTag: dad6e766-392b-489b-b7a5-fa3324abb18e
 

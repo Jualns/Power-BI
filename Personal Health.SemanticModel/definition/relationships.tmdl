@@ -1,31 +1,7 @@
-relationship 7f32a451-d359-40be-b5be-36365c830ab5
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FAT_Jejum.'Data Início'
-	toColumn: LocalDateTable_e21cd110-e9f5-4dfa-b3b0-690e29f33318.Date
-
-relationship 55e2336a-6993-444d-b658-7c35afbef217
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FAT_Jejum.'Data Hora Início'
-	toColumn: LocalDateTable_dc0389f5-3054-4f5c-b0b9-e77fd63f72d5.Date
-
-relationship bec82356-9c0e-4cfb-83f2-ed0d83bba071
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FAT_Jejum.'Data Hora Fim'
-	toColumn: LocalDateTable_1befbc04-7ef6-4dd7-a908-e51b7fd51d18.Date
-
-relationship 7dbfd289-3ba1-4f5f-a44b-a0598db91a5f
-	joinOnDateBehavior: datePartOnly
-	fromColumn: FAT_Peso.DataHora
-	toColumn: LocalDateTable_af909f62-53b7-4b6a-a12a-b2fc9b1cba77.Date
-
 relationship 80aaf0f5-56ab-4659-9721-a3f020692221
 	joinOnDateBehavior: datePartOnly
 	fromColumn: _dCalendario.DataGrafico
 	toColumn: LocalDateTable_90d545ec-3f6b-4bdd-935f-9335440d5167.Date
-
-relationship d0238480-3a80-3eef-bb87-d4d68a720344
-	fromColumn: FAT_Peso.Data
-	toColumn: _dCalendario.Data
 
 relationship 20080a94-ba42-5369-f67c-5157f03d071a
 	fromColumn: FAT_Jejum.Datas
@@ -36,12 +12,40 @@ relationship 9d724f12-00ae-4456-9ee4-7ca6b34b8e94
 	fromColumn: FAT_Peso.'xCL Data Anterior'
 	toColumn: LocalDateTable_fca13d4e-0c92-4bcf-a681-39dbe7d12836.Date
 
-relationship 52a5d63e-3c6c-422a-bc99-8adc6663e603
-	joinOnDateBehavior: datePartOnly
-	fromColumn: _dCalendario.Data
-	toColumn: LocalDateTable_8faf89aa-07df-4e70-978a-d45f5b152b71.Date
-
 relationship 4d303e19-f300-1d3a-0429-2def655c4506
 	fromColumn: FAT_Peso_Agregado.Data
+	toColumn: _dCalendario.Data
+
+relationship 645517b0-5419-4d44-9d69-6ddbb876ae91
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FAT_Jejum.Data
+	toColumn: LocalDateTable_11c4c236-366a-4e96-a77b-2f10a58fabd0.Date
+
+relationship 0d5e343a-658a-46be-97e8-7e5eb417cfb7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FAT_Jejum.'Data Fim'
+	toColumn: LocalDateTable_84968592-1ceb-4997-a2ac-98e3e2fc247e.Date
+
+relationship 9a983d7a-9ddb-41df-858a-b5cc747693a5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FAT_Peso.DataHora
+	toColumn: LocalDateTable_32197afb-0d31-4b29-8264-04f3d74da4c9.Date
+
+relationship f95cb0c8-551a-494e-be5e-3f616c173c56
+	joinOnDateBehavior: datePartOnly
+	fromColumn: _dCalendario.Data
+	toColumn: LocalDateTable_bd17440b-3a15-4198-a156-ead2b15b5deb.Date
+
+relationship 328e7c86-a952-2df8-edea-b43baab8f255
+	fromColumn: FAT_Peso.Data
+	toColumn: _dCalendario.Data
+
+relationship f13f1180-797a-4b59-83f2-99b87eee4838
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FAT_Recaida.DataHora
+	toColumn: LocalDateTable_a9c17052-0788-4313-b385-c42793c32703.Date
+
+relationship 1766b84a-40eb-7d18-8b27-8152d3dff9a5
+	fromColumn: FAT_Recaida.Data
 	toColumn: _dCalendario.Data
 

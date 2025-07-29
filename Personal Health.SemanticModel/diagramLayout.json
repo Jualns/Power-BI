@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 20.917466290654978,
+        "y": 284.03716900637471
       },
       "nodes": [
         {
           "location": {
             "x": 608,
-            "y": 70.875
+            "y": 106.3125
           },
           "nodeIndex": "_Medidas",
           "nodeLineageTag": "6c4d101b-ada0-4f22-babe-c081fcb8086e",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 31,
-            "y": 589.875
+            "y": 625.3125
           },
           "nodeIndex": "FAT_Jejum",
           "nodeLineageTag": "548a2957-8522-4c96-91b7-c7ec5d3fb647",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 515,
-            "y": 606.875
+            "x": 648.44969223802923,
+            "y": 652.738257206096
           },
           "nodeIndex": "FAT_Peso",
           "nodeLineageTag": "739d3e59-58aa-4fba-9b32-d2f86a173456",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 233,
-            "y": 91.875
+            "y": 127.3125
           },
           "nodeIndex": "_dCalendario",
           "nodeLineageTag": "70df2dab-e9fe-42d0-afa5-b57cb738d421",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 950,
-            "y": 87.875
+            "y": 123.3125
           },
           "nodeIndex": "_BoxPlot",
           "nodeLineageTag": "8c76a51c-799f-4cbe-a02d-32b5b0a732d8",
@@ -75,10 +75,11 @@
         },
         {
           "location": {
-            "x": 1114,
-            "y": 352.375
+            "x": 1134.851514412192,
+            "y": 112.5725097590647
           },
           "nodeIndex": "Periodos_X",
+          "nodeLineageTag": "5016166c-d5fa-46fd-91f5-ccb3e47cd200",
           "size": {
             "height": 152,
             "width": 234
@@ -87,21 +88,21 @@
         },
         {
           "location": {
-            "x": 1367,
-            "y": 309.375
+            "x": 1162.6551587605177,
+            "y": 313.53522838171193
           },
           "nodeIndex": "Dias_de_pos_jejum",
           "nodeLineageTag": "f7771d0b-0673-4594-a0d0-12cd4c927d73",
           "size": {
-            "height": 224,
+            "height": 148.93454811610854,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 653.19746099411771,
-            "y": 355.08366350306125
+            "x": 634.43109802314484,
+            "y": 467.67176682817188
           },
           "nodeIndex": "FAT_Peso_Agregado",
           "nodeLineageTag": "9cfdee91-a1d0-4f08-88e8-caf91156c701",
@@ -110,10 +111,23 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 20.688844584868548,
+            "y": 916.865054982597
+          },
+          "nodeIndex": "FAT_Recaida",
+          "nodeLineageTag": "29fdc26a-0e12-4b15-9786-be83b65eef4d",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 70.95554390096882,
+      "zoomValue": 72.666543825414649,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

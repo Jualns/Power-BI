@@ -40,7 +40,7 @@ table Periodos_X
 		mode: import
 		source =
 				{
-				    ("Horário Treino", NAMEOF('FAT_Peso'[Treino]), 0),
+				    ("Horário Treino", NAMEOF('FAT_Peso'[Status do Registro]), 0),
 				    ("Período Dia", NAMEOF('FAT_Peso'[Período do Dia]), 1),
 				    ("Semana", NAMEOF(_dCalendario[Semana do Ano]), 2)
 				}
