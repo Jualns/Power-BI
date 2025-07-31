@@ -85,7 +85,7 @@ table FAT_Peso
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'xMD Variação Inciial Final' =
+	measure 'xMD Variação Incial Final (%)' =
 			
 			
 			DIVIDE(
@@ -94,7 +94,64 @@ table FAT_Peso
 			    0
 			)
 		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Variação Final ~ Inicial
 		lineageTag: 79b9db53-358a-45c0-823c-f472b7ce22c7
+
+	measure 'xMD Variação Incial Final (#)' = ```
+			
+			    [xMD Peso Final] - [xMD Peso Inicial]
+			```
+		displayFolder: Variação Final ~ Inicial
+		lineageTag: 6296627a-183f-49d1-9839-86e0b0d39fb8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Seta Variação Peso' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    NOT([AUX Check Inicial e Final Existem?]), BLANK(), -- se um deles for em branco
+			    [Check Perda de Peso], 
+			    "▼",
+			    "▲"
+			)
+			```
+		displayFolder: Variação Final ~ Inicial
+		lineageTag: 265e92b9-8f07-4a77-bb3e-db21db1d5054
+
+	measure 'Check Perda de Peso' = ```
+			
+			    [xMD Variação Incial Final (#)] < 0 -- Se True então concorda com o nome da medida (Ou seja, de fato perdeu peso)
+			
+			
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Variação Final ~ Inicial
+		lineageTag: 9a0e854b-bddd-4651-bfb8-37511eb9b03b
+
+	measure 'Color Variação Peso' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    NOT([AUX Check Inicial e Final Existem?]), BLANK(), -- se um deles for em branco
+			    [Check Perda de Peso], 
+			    "#06D6A0", -- Verde
+			    "#EF476F" -- Vermelho
+			)
+			```
+		displayFolder: Variação Final ~ Inicial
+		lineageTag: 9de6d96d-2507-4066-9d93-3ae658ed771d
+
+	measure 'AUX Check Inicial e Final Existem?' =
+			
+			
+			AND(
+			    NOT(ISBLANK([xMD Peso Final])),
+			    NOT(ISBLANK([xMD Peso Inicial]))
+			) -- ambos devem ter valores
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Variação Final ~ Inicial
+		lineageTag: 7752e189-f128-4788-a6d5-c29df456993d
 
 	column DataHora
 		dataType: dateTime

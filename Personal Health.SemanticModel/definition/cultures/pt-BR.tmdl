@@ -168,7 +168,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "ㅤje": {
+			          "ㅤ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3464,6 +3464,16 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
+			          "Peso Médio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "AVG": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4736,22 +4746,27 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso.xMD_variação_inciial_final": {
+			    "FAT_peso.xMD_variação_incial_final": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "FAT_Peso",
-			          "ConceptualProperty": "xMD Variação Inciial Final"
+			          "ConceptualProperty": "xMD Variação Incial Final (%)"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "xMD variação inciial final": {
+			          "xMD variação incial final": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "xmd variação inciial decider": {
+			          "xMD variação incial final (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xmd variação incial decider": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -4761,7 +4776,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "xmd variação inciial round": {
+			          "xmd variação incial round": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -4771,7 +4786,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "xmd variação inciial match": {
+			          "xmd variação incial match": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -4781,7 +4796,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "xmd variação inciial game": {
+			          "xmd variação incial game": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -4791,7 +4806,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Var. Total Δ (%)": {
+			          "Δ (%)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4800,6 +4815,10 @@ cultureInfo pt-BR
 			            "Weight": 0.9
 			          }
 			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
 			      ]
 			    },
 			    "entity__dCalendario.jejuando": {
@@ -6192,13 +6211,116 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "ㅤre": {
+			          "ㅤ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
 			              "Agent": "PowerBI.VisualColumnRename"
 			            },
 			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.xMD_aux_peso_MIN_constant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "xMD Aux Peso MIN Constant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD aux peso MIN constant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xmd aux peso minimum constant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_jejum.tempo_jejum_médio_h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Jejum",
+			          "ConceptualProperty": "Tempo Jejum Médio (h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo jejum médio (h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo jejum médio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.xMD_variação_incial_final_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "xMD Variação Incial Final (#)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD variação incial final (#)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xMD variação incial final": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Δ (Kg)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__dCalendario.mês_formatado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_dCalendario",
+			          "ConceptualProperty": "Mês Formatado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mês formatado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mê formatado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
 			          }
 			        }
 			      ]
@@ -9090,6 +9212,138 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "entity__dCalendario_has_mês_formatado": {
+			      "Binding": {
+			        "ConceptualEntity": "_dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__dCalendario": {
+			          "Target": {
+			            "Entity": "entity__dCalendario"
+			          }
+			        },
+			        "entity__dCalendario.mês_formatado": {
+			          "Target": {
+			            "Entity": "entity__dCalendario.mês_formatado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__dCalendario"
+			            },
+			            "Object": {
+			              "Role": "entity__dCalendario.mês_formatado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_dCalendarios_have_mês_formatados"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_xMD_variação_incial_final_": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.xMD_variação_incial_final_": {
+			          "Target": {
+			            "Entity": "FAT_peso.xMD_variação_incial_final_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.xMD_variação_incial_final_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_variação_incial_final_"
+			        }
+			      ]
+			    },
+			    "FAT_jejum_has_tempo_jejum_médio_h": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Jejum"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_jejum": {
+			          "Target": {
+			            "Entity": "FAT_jejum"
+			          }
+			        },
+			        "FAT_jejum.tempo_jejum_médio_h": {
+			          "Target": {
+			            "Entity": "FAT_jejum.tempo_jejum_médio_h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_jejum"
+			            },
+			            "Object": {
+			              "Role": "FAT_jejum.tempo_jejum_médio_h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_jejums_have_tempo_jejum_médio_h"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_entity__medida_xMD_aux_peso_MIN_constant": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "entity__medida.xMD_aux_peso_MIN_constant": {
+			          "Target": {
+			            "Entity": "entity__medida.xMD_aux_peso_MIN_constant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.xMD_aux_peso_MIN_constant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_xMD_aux_peso_MIN_constant"
+			        }
+			      ]
+			    },
 			    "FAT_recaida_has_xMD_BLANK_recaida": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Recaida"
@@ -9882,7 +10136,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso_has_xMD_variação_inciial_final": {
+			    "FAT_peso_has_xMD_variação_incial_final": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso"
 			      },
@@ -9893,9 +10147,9 @@ cultureInfo pt-BR
 			            "Entity": "FAT_peso"
 			          }
 			        },
-			        "FAT_peso.xMD_variação_inciial_final": {
+			        "FAT_peso.xMD_variação_incial_final": {
 			          "Target": {
-			            "Entity": "FAT_peso.xMD_variação_inciial_final"
+			            "Entity": "FAT_peso.xMD_variação_incial_final"
 			          }
 			        }
 			      },
@@ -9906,12 +10160,12 @@ cultureInfo pt-BR
 			              "Role": "FAT_peso"
 			            },
 			            "Object": {
-			              "Role": "FAT_peso.xMD_variação_inciial_final"
+			              "Role": "FAT_peso.xMD_variação_incial_final"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_xMD_variação_inciial_final"
+			          "ID": "FAT_pesos_have_xMD_variação_incial_final"
 			        }
 			      ]
 			    },

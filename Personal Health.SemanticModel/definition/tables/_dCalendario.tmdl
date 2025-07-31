@@ -191,6 +191,12 @@ table _dCalendario
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Mês Formatado' = UPPER(FORMAT(_dCalendario[Data], "MMM"))
+		lineageTag: f677188d-a3dc-4a7d-9734-a243fd6d8ae5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	hierarchy 'Hierarquia Mes-Sem'
 		lineageTag: 4cfb5745-48ef-474c-ba9d-498d5bccf86c
 

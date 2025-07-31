@@ -9,6 +9,11 @@ table FAT_Jejum
 		formatString: 0
 		lineageTag: f85166e3-57bf-4ebe-8115-fcfdb22df19e
 
+	measure 'Tempo Jejum Médio (h)' = AVERAGE(FAT_Jejum[Período do jejum])
+		lineageTag: dc0e485b-adf8-4a22-9a23-5e0e44fc3a61
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Datas
 		dataType: dateTime
 		formatString: Long Date
