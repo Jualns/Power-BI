@@ -1,6 +1,11 @@
 table FAT_Peso_Agregado
 	lineageTag: 9cfdee91-a1d0-4f08-88e8-caf91156c701
 
+	measure 'xMD Tempo Médio' = AVERAGE(FAT_Peso_Agregado[xCL Tempo de Treino (h)])
+		lineageTag: b05883dd-65ac-4f1f-9b16-dd16aa502182
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Data
 		dataType: dateTime
 		formatString: Long Date
@@ -68,6 +73,45 @@ table FAT_Peso_Agregado
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 7d0860e3-5adb-40c9-b943-ab9df95f105d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'xCL Tempo de Treino (h)' = ```
+			
+			
+			VAR data = FAT_Peso_Agregado[Data]
+			
+			VAR min_hora = 
+			    CALCULATE(
+			        MIN(FAT_Peso[Hora]),
+			        AND(
+			            FAT_Peso[Data] = data,
+			            FAT_Peso[Status do Registro] = "Antes"
+			        )
+			    )
+			
+			VAR max_hora = 
+			    CALCULATE(
+			        MAX(FAT_Peso[Hora]),
+			        AND(
+			            FAT_Peso[Data] = data,
+			            FAT_Peso[Status do Registro] = "Depois"
+			        )
+			    )
+			
+			RETURN
+			DIVIDE(
+			    DATEDIFF(
+			        min_hora, 
+			        max_hora, 
+			        MINUTE
+			    ),
+			    60
+			)
+			```
+		formatString: 0.00
+		lineageTag: c39838dc-7f30-4f57-bba6-a94d3af25910
 		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic

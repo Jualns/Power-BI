@@ -4804,16 +4804,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.45
 			          }
-			        },
-			        {
-			          "Δ (%)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ],
 			      "Units": [
@@ -6289,16 +6279,6 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.75
 			          }
-			        },
-			        {
-			          "Δ (Kg)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -6321,6 +6301,208 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.seta_variação_peso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Seta Variação Peso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "seta variação peso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.check_perda_de_peso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Check Perda de Peso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "check perda de peso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cheque perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "checkup perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "inspection perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "payment perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "test perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "tick perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "bill perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "safety inspection perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "safety test perda de peso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.color_variação_peso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Color Variação Peso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "color variação peso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.AUX_check_inicial_e_final_existem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "AUX Check Inicial e Final Existem?"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AUX check inicial e final existem?": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso_agregado.xCL_tempo_de_treino_h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso_Agregado",
+			          "ConceptualProperty": "xCL Tempo de Treino (h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xCL tempo de treino (h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "xCL tempo de treino": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso_agregado.xMD_tempo_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso_Agregado",
+			          "ConceptualProperty": "xMD Tempo Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "xMD tempo médio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Horas de Treino": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -9209,6 +9391,204 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "Phrasing_dCalendarios_have_FAT_jejums"
+			        }
+			      ]
+			    },
+			    "FAT_peso_agregado_has_xMD_tempo_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso_Agregado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso_agregado": {
+			          "Target": {
+			            "Entity": "FAT_peso_agregado"
+			          }
+			        },
+			        "FAT_peso_agregado.xMD_tempo_médio": {
+			          "Target": {
+			            "Entity": "FAT_peso_agregado.xMD_tempo_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso_agregado"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso_agregado.xMD_tempo_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_peso_agregados_have_xMD_tempo_médio"
+			        }
+			      ]
+			    },
+			    "FAT_peso_agregado_has_xCL_tempo_de_treino_h": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso_Agregado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso_agregado": {
+			          "Target": {
+			            "Entity": "FAT_peso_agregado"
+			          }
+			        },
+			        "FAT_peso_agregado.xCL_tempo_de_treino_h": {
+			          "Target": {
+			            "Entity": "FAT_peso_agregado.xCL_tempo_de_treino_h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso_agregado"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso_agregado.xCL_tempo_de_treino_h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_peso_agregados_have_xCL_tempo_de_treino_h"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_AUX_check_inicial_e_final_existem": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.AUX_check_inicial_e_final_existem": {
+			          "Target": {
+			            "Entity": "FAT_peso.AUX_check_inicial_e_final_existem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.AUX_check_inicial_e_final_existem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_AUX_check_inicial_e_final_existem"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_color_variação_peso": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.color_variação_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso.color_variação_peso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.color_variação_peso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_color_variação_peso"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_check_perda_de_peso": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.check_perda_de_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso.check_perda_de_peso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.check_perda_de_peso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_check_perda_de_peso"
+			        }
+			      ]
+			    },
+			    "FAT_peso_has_seta_variação_peso": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.seta_variação_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso.seta_variação_peso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.seta_variação_peso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_seta_variação_peso"
 			        }
 			      ]
 			    },
