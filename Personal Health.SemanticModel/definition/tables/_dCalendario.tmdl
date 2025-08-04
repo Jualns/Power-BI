@@ -215,7 +215,8 @@ table _dCalendario
 				let
 				    Fonte = FAT_Peso[Data],
 				    DatasValidas = List.RemoveNulls(Fonte),
-				    DataMin = Date.From(List.Min(DatasValidas)),
+				    DataMinOriginal = Date.From(List.Min(DatasValidas)),
+				    DataMin = #date(Date.Year(DataMinOriginal), 1, 1),
 				    DataMaxOriginal = List.Max(DatasValidas),
 				
 				    // Ajusta DataMax para ser o último dia do ano da DataMaxOriginal

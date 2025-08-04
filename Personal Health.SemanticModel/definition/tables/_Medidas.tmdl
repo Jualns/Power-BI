@@ -6,7 +6,7 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure Ultimo_Registro = "Último Registro: " & FORMAT(MAX(FAT_Peso[DataHora]), "dd/mm/yyyy hh:nn")
+	measure Ultimo_Registro = ""--"Último Registro: " & FORMAT(MAX(FAT_Peso[DataHora]), "dd/mm/yyyy hh:nn")
 		lineageTag: c339ebce-6c30-4162-b64f-d6c188039762
 
 	measure 'Qtde de Treinos' = DISTINCTCOUNT(FAT_Peso[DataHora])
