@@ -134,9 +134,9 @@ table FAT_Peso
 			SWITCH(
 			    TRUE(),
 			    NOT([AUX Check Inicial e Final Existem?]), BLANK(), -- se um deles for em branco
-			    [Check Perda de Peso], 
-			    "#06D6A0", -- Verde
-			    "#EF476F" -- Vermelho
+			    [Check_Delta_Peso_Medida], 
+			    "#059D74", -- Verde
+			    "#B63754" -- Vermelho
 			)
 			```
 		displayFolder: Variação Final ~ Inicial
@@ -152,6 +152,10 @@ table FAT_Peso
 		formatString: """TRUE"";""TRUE"";""FALSE"""
 		displayFolder: Variação Final ~ Inicial
 		lineageTag: 7752e189-f128-4788-a6d5-c29df456993d
+
+	measure Check_Delta_Peso_Medida = [Delta Δ Peso AVG (%)] <= 0
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 07f4ec72-75ba-46a5-96bd-b487e6f3c1e8
 
 	column DataHora
 		dataType: dateTime

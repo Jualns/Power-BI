@@ -2886,6 +2886,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Data": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -6494,15 +6504,118 @@ cultureInfo pt-BR
 			          "xMD tempo médio": {
 			            "State": "Generated"
 			          }
+			        }
+			      ]
+			    },
+			    "FAT_peso.check_delta_peso_medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FAT_Peso",
+			          "ConceptualProperty": "Check_Delta_Peso_Medida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "check delta peso medida": {
+			            "State": "Generated"
+			          }
 			        },
 			        {
-			          "Horas de Treino": {
+			          "Check_Delta_Peso_Medida": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cheque delta peso medida": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "checkup delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "inspection delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "payment delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "test delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "tick delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "bill delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "safety inspection delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "safety test delta peso medida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
 			          }
 			        }
 			      ]
@@ -9394,6 +9507,39 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "FAT_peso_has_check_delta_peso_medida": {
+			      "Binding": {
+			        "ConceptualEntity": "FAT_Peso"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FAT_peso": {
+			          "Target": {
+			            "Entity": "FAT_peso"
+			          }
+			        },
+			        "FAT_peso.check_delta_peso_medida": {
+			          "Target": {
+			            "Entity": "FAT_peso.check_delta_peso_medida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FAT_peso"
+			            },
+			            "Object": {
+			              "Role": "FAT_peso.check_delta_peso_medida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FAT_pesos_have_check_delta_peso_medida"
+			        }
+			      ]
+			    },
 			    "FAT_peso_agregado_has_xMD_tempo_médio": {
 			      "Binding": {
 			        "ConceptualEntity": "FAT_Peso_Agregado"
@@ -11374,15 +11520,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "FAT_peso_has_entity__medida_ultimo_registro": {
+			    "entity__medida_has_ultimo_registro": {
 			      "Binding": {
-			        "ConceptualEntity": "FAT_Peso"
+			        "ConceptualEntity": "_Medidas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "FAT_peso": {
+			        "entity__medida": {
 			          "Target": {
-			            "Entity": "FAT_peso"
+			            "Entity": "entity__medida"
 			          }
 			        },
 			        "entity__medida.ultimo_registro": {
@@ -11395,7 +11541,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "FAT_peso"
+			              "Role": "entity__medida"
 			            },
 			            "Object": {
 			              "Role": "entity__medida.ultimo_registro"
@@ -11403,7 +11549,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "FAT_pesos_have_ultimo_registro"
+			          "ID": "Phrasing_medidas_have_ultimo_registro"
 			        }
 			      ]
 			    },
