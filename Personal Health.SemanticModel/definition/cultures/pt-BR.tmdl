@@ -140,16 +140,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Horário Treino": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -168,7 +158,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "ㅤ": {
+			          "Dietaㅤ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2016,6 +2006,16 @@ cultureInfo pt-BR
 			        {
 			          "período do dia": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Período Dia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6211,7 +6211,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "ㅤ": {
+			          "Recaídaㅤ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
